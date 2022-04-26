@@ -14,6 +14,9 @@
 		FD4379C32818A6600036AE8B /* AbonoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4379C22818A6600036AE8B /* AbonoTests.swift */; };
 		FD4379CD2818A6600036AE8B /* AbonoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4379CC2818A6600036AE8B /* AbonoUITests.swift */; };
 		FD4379CF2818A6600036AE8B /* AbonoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4379CE2818A6600036AE8B /* AbonoUITestsLaunchTests.swift */; };
+		FD4379DC2818AA4E0036AE8B /* AmountCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4379DB2818AA4E0036AE8B /* AmountCardView.swift */; };
+		FD4379DE2818AB450036AE8B /* TopAmountSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4379DD2818AB450036AE8B /* TopAmountSectionView.swift */; };
+		FD4379E02818ACDD0036AE8B /* SubscriptionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4379DF2818ACDD0036AE8B /* SubscriptionCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		FD4379C82818A6600036AE8B /* AbonoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbonoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD4379CC2818A6600036AE8B /* AbonoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbonoUITests.swift; sourceTree = "<group>"; };
 		FD4379CE2818A6600036AE8B /* AbonoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbonoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FD4379DB2818AA4E0036AE8B /* AmountCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountCardView.swift; sourceTree = "<group>"; };
+		FD4379DD2818AB450036AE8B /* TopAmountSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAmountSectionView.swift; sourceTree = "<group>"; };
+		FD4379DF2818ACDD0036AE8B /* SubscriptionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,9 @@
 			children = (
 				FD4379B12818A65E0036AE8B /* AbonoApp.swift */,
 				FD4379B32818A65E0036AE8B /* ContentView.swift */,
+				FD4379DB2818AA4E0036AE8B /* AmountCardView.swift */,
+				FD4379DD2818AB450036AE8B /* TopAmountSectionView.swift */,
+				FD4379DF2818ACDD0036AE8B /* SubscriptionCardView.swift */,
 				FD4379B52818A65F0036AE8B /* Assets.xcassets */,
 				FD4379B72818A65F0036AE8B /* Preview Content */,
 			);
@@ -257,7 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD4379DE2818AB450036AE8B /* TopAmountSectionView.swift in Sources */,
 				FD4379B42818A65E0036AE8B /* ContentView.swift in Sources */,
+				FD4379E02818ACDD0036AE8B /* SubscriptionCardView.swift in Sources */,
+				FD4379DC2818AA4E0036AE8B /* AmountCardView.swift in Sources */,
 				FD4379B22818A65E0036AE8B /* AbonoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
