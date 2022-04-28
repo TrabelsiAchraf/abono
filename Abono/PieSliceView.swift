@@ -32,7 +32,16 @@ struct PieSliceView: View {
                         clockwise: false)
                     
                 }
-                .fill(pieSliceData.color)
+                .fill(
+                    LinearGradient(
+                        gradient: Gradient(stops: [
+                            Gradient.Stop(color: .orange, location: 0.05),
+                            Gradient.Stop(color: .pink, location: 0.4),
+                            Gradient.Stop(color: .purple, location: 0.5),
+                            Gradient.Stop(color: .blue, location: 1),
+                        ]),
+                        startPoint: .leading, endPoint: .trailing)
+                )
                 
                 Text(pieSliceData.text)
                     .bold()
