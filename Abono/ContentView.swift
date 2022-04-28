@@ -29,13 +29,13 @@ struct ContentView: View {
                     .frame(height: geometry.frame(in: .global).height * 0.3)
                     .padding(.horizontal, 10)
                 
-                PieChartView(values: [1300, 500, 300],
+                PieChartView(values: [12, 17, 3.5],
                              colors: [Color.blue, Color.green, Color.orange],
-                             names: ["Rent", "Transport", "Education"],
+                             names: ["Netflix", "Youtube", "Amazon"],
                              backgroundColor: .white,
                              innerRadiusFraction: 0.6)
-                .frame(width: geometry.frame(in: .global).height * 0.28,
-                       height: geometry.frame(in: .global).height * 0.28)
+                .frame(width: geometry.frame(in: .global).height * 0.29,
+                       height: geometry.frame(in: .global).height * 0.29)
                 
                 Rectangle()
                     .stroke(Color.clear)

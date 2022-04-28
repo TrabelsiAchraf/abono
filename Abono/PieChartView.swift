@@ -64,7 +64,7 @@ struct PieChartView_Previews: PreviewProvider {
     static var previews: some View {
         PieChartView(values: [12, 17, 3.5],
                      colors: [Color.blue, Color.green, Color.orange],
-                     names: ["Rent", "Transport", "Education"],
+                     names: ["Netflix", "Youtube", "Amazon"],
                      backgroundColor: .white,
                      innerRadiusFraction: 0.6)
         .previewLayout(.sizeThatFits)
