@@ -9,38 +9,39 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var gridItems: [GridItem] = [GridItem()]
-
+    @State private var bottomSheetShown = false
+    
     var body: some View {
-        VStack {
-            ZStack {
-               Color(red: 240/255, green: 242/255, blue: 249/255, opacity: 1.0)
-                
-                VStack {
-                    TopAmountSectionView(
-                        firstAmount: .init(title: "Weekly", amount: "$0.00"),
-                        secondAmount: .init(title: "Monthly", amount: "$5.99"),
-                        thirdAmount: .init(title: "Yearly", amount: "$67.94")
-                    )
-                    .padding(.bottom, 30)
-                    
-                    ScrollView(.horizontal) {
-                        LazyHGrid(rows: gridItems, alignment: .center, spacing: 20) {
-                            ForEach((1...4), id: \.self) { number in
-                                SubscriptionCardView()
-                            }
-                        }
-                        .background(Color(red: 240/255, green: 242/255, blue: 249/255, opacity: 1.0))
-                    }
-                    .padding(.horizontal, 10)
-                }
-            }
-            .ignoresSafeArea()
-            
-            Rectangle()
-                .foregroundColor(.white)
+        GeometryReader { geometry in
+            Spacer()
+            Color(red: 240/255, green: 242/255, blue: 249/255, opacity: 1.0)
                 .ignoresSafeArea()
+            
+            VStack {
+                TopAmountSectionView(
+                    firstAmount: .init(title: "Weekly", amount: "$0.00"),
+                    secondAmount: .init(title: "Monthly", amount: "$5.99"),
+                    thirdAmount: .init(title: "Yearly", amount: "$67.94")
+                )
+                .frame(height: geometry.frame(in: .global).height * 0.1)
+                
+                UpcomingSubscriptionsView()
+                    .frame(height: geometry.frame(in: .global).height * 0.3)
+                    .padding(.horizontal, 10)
+            }
+            
+            
+            BottomSheetView(
+                isOpen: $bottomSheetShown,
+                maxHeight: geometry.frame(in: .global).height * 1
+            ) {
+                AllSubscriptionsModalView(status: bottomSheetShown ? .constant(.opened) : .constant(.closed), sheetButtonTapped: {
+                    bottomSheetShown.toggle()
+                })
+                .background(Color.white)
+            }
         }
+        .edgesIgnoringSafeArea(.bottom)
     }
 }
 

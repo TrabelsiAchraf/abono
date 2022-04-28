@@ -17,6 +17,11 @@
 		FD4379DC2818AA4E0036AE8B /* AmountCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4379DB2818AA4E0036AE8B /* AmountCardView.swift */; };
 		FD4379DE2818AB450036AE8B /* TopAmountSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4379DD2818AB450036AE8B /* TopAmountSectionView.swift */; };
 		FD4379E02818ACDD0036AE8B /* SubscriptionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4379DF2818ACDD0036AE8B /* SubscriptionCardView.swift */; };
+		FD4379FB281A981C0036AE8B /* UpcomingSubscriptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4379FA281A981C0036AE8B /* UpcomingSubscriptionsView.swift */; };
+		FD4379FD281A99B00036AE8B /* ProgressCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4379FC281A99B00036AE8B /* ProgressCircleView.swift */; };
+		FD4379FF281A9E7C0036AE8B /* AllSubscriptionsModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4379FE281A9E7C0036AE8B /* AllSubscriptionsModalView.swift */; };
+		FDADE24D281ABBA700C133DD /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDADE24C281ABBA700C133DD /* BottomSheetView.swift */; };
+		FDADE24F281AC28100C133DD /* SubscriptionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDADE24E281AC28100C133DD /* SubscriptionItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +55,11 @@
 		FD4379DB2818AA4E0036AE8B /* AmountCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountCardView.swift; sourceTree = "<group>"; };
 		FD4379DD2818AB450036AE8B /* TopAmountSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAmountSectionView.swift; sourceTree = "<group>"; };
 		FD4379DF2818ACDD0036AE8B /* SubscriptionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionCardView.swift; sourceTree = "<group>"; };
+		FD4379FA281A981C0036AE8B /* UpcomingSubscriptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingSubscriptionsView.swift; sourceTree = "<group>"; };
+		FD4379FC281A99B00036AE8B /* ProgressCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleView.swift; sourceTree = "<group>"; };
+		FD4379FE281A9E7C0036AE8B /* AllSubscriptionsModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSubscriptionsModalView.swift; sourceTree = "<group>"; };
+		FDADE24C281ABBA700C133DD /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		FDADE24E281AC28100C133DD /* SubscriptionItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +115,11 @@
 				FD4379DB2818AA4E0036AE8B /* AmountCardView.swift */,
 				FD4379DD2818AB450036AE8B /* TopAmountSectionView.swift */,
 				FD4379DF2818ACDD0036AE8B /* SubscriptionCardView.swift */,
+				FD4379FA281A981C0036AE8B /* UpcomingSubscriptionsView.swift */,
+				FD4379FC281A99B00036AE8B /* ProgressCircleView.swift */,
+				FD4379FE281A9E7C0036AE8B /* AllSubscriptionsModalView.swift */,
+				FDADE24E281AC28100C133DD /* SubscriptionItemView.swift */,
+				FDADE24C281ABBA700C133DD /* BottomSheetView.swift */,
 				FD4379B52818A65F0036AE8B /* Assets.xcassets */,
 				FD4379B72818A65F0036AE8B /* Preview Content */,
 			);
@@ -267,6 +282,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD4379DE2818AB450036AE8B /* TopAmountSectionView.swift in Sources */,
+				FD4379FB281A981C0036AE8B /* UpcomingSubscriptionsView.swift in Sources */,
+				FDADE24F281AC28100C133DD /* SubscriptionItemView.swift in Sources */,
+				FDADE24D281ABBA700C133DD /* BottomSheetView.swift in Sources */,
+				FD4379FD281A99B00036AE8B /* ProgressCircleView.swift in Sources */,
+				FD4379FF281A9E7C0036AE8B /* AllSubscriptionsModalView.swift in Sources */,
 				FD4379B42818A65E0036AE8B /* ContentView.swift in Sources */,
 				FD4379E02818ACDD0036AE8B /* SubscriptionCardView.swift in Sources */,
 				FD4379DC2818AA4E0036AE8B /* AmountCardView.swift in Sources */,
@@ -429,6 +449,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Abono/Preview Content\"";
+				DEVELOPMENT_TEAM = QN66UQNDZR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -457,6 +478,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Abono/Preview Content\"";
+				DEVELOPMENT_TEAM = QN66UQNDZR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

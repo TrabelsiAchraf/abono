@@ -25,15 +25,17 @@ struct SubscriptionCardView: View {
                     Text("Netflix")
                         .font(.title2).bold()
                     Text("Entertainment")
-                        .font(.title2)
+                        .font(.caption)
                         .foregroundColor(Color(red: 196/255, green: 206/255, blue: 230/255, opacity: 1.0))
                 }
                 Spacer()
             }
             
             HStack {
+                ProgressCircleView(progress: .constant(0.8), color: .constant(.blue))
                 Text("days keft")
                     .bold()
+                Spacer()
             }
         }
         .padding()

@@ -16,7 +16,7 @@ struct TopAmountSectionView: View {
     var body: some View {
         HStack {
             Spacer()
-            AmountCardView(title: firstAmount.title, amount: firstAmount.amount)
+            AmountCardView(title: firstAmount.title, amount: firstAmount.amount, isEnabled: false)
             Spacer()
             AmountCardView(title: secondAmount.title, amount: secondAmount.amount)
             Spacer()

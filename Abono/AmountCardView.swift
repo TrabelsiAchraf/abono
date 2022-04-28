@@ -11,6 +11,7 @@ struct AmountCardView: View {
     
     var title: String
     var amount: String
+    var isEnabled: Bool = true
     
     var body: some View {
         VStack {
@@ -19,12 +20,17 @@ struct AmountCardView: View {
             Text(amount)
                 .font(.title).bold()
         }
+        .foregroundColor(isEnabled ? .black : .gray)
     }
 }
 
 struct AmountCardView_Previews: PreviewProvider {
     static var previews: some View {
         AmountCardView(title: "Weekly", amount: "$0.00")
+            .previewLayout(.sizeThatFits)
+            .padding()
+        
+        AmountCardView(title: "Weekly", amount: "$0.00", isEnabled: false)
             .previewLayout(.sizeThatFits)
             .padding()
     }
