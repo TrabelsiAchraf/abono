@@ -41,7 +41,7 @@ struct AllSubscriptionsModalView: View {
                     .clipShape(Capsule())
             }
             
-            List {
+            ScrollView(axes, showsIndicators: false) {
                 ForEach(0..<10) { _ in
                     SubscriptionItemView()
                         .padding(.vertical, 10)
@@ -52,6 +52,10 @@ struct AllSubscriptionsModalView: View {
         .padding(.horizontal, 20)
         .padding(.top, 20)
     }
+    
+    private var axes: Axis.Set {
+        return status == .opened ? .vertical : []
+    }
 }
 
 struct AllSubscriptionsModalView_Previews: PreviewProvider {
@@ -61,4 +65,3 @@ struct AllSubscriptionsModalView_Previews: PreviewProvider {
         })
     }
 }
-
