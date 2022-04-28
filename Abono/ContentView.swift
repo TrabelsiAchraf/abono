@@ -30,7 +30,6 @@ struct ContentView: View {
                     .padding(.horizontal, 10)
             }
             
-            
             BottomSheetView(
                 isOpen: $bottomSheetShown,
                 maxHeight: geometry.frame(in: .global).height * 1

@@ -12,13 +12,21 @@ struct UpcomingSubscriptionsView: View {
     var gridItems: [GridItem] = [GridItem()]
     
     var body: some View {
-        ScrollView(.horizontal) {
-            LazyHGrid(rows: gridItems, alignment: .center, spacing: 20) {
-                ForEach((1...4), id: \.self) { number in
-                    SubscriptionCardView()
-                }
+        VStack {
+            HStack {
+                Text("Upcoming")
+                    .font(.title3).bold()
+                Spacer()
             }
-            .background(Color(red: 240/255, green: 242/255, blue: 249/255, opacity: 1.0))
+            ScrollView(.horizontal) {
+                LazyHGrid(rows: gridItems, alignment: .center, spacing: 20) {
+                    ForEach((1...4), id: \.self) { number in
+                        SubscriptionCardView()
+                    }
+                }
+                .background(Color(red: 240/255, green: 242/255, blue: 249/255, opacity: 1.0))
+            }
+            .frame(minHeight: 100, maxHeight: .infinity)
         }
     }
 }
@@ -26,5 +34,7 @@ struct UpcomingSubscriptionsView: View {
 struct UpcomingSubscriptionsView_Previews: PreviewProvider {
     static var previews: some View {
         UpcomingSubscriptionsView()
+            .previewLayout(.sizeThatFits)
+            .padding()
     }
 }

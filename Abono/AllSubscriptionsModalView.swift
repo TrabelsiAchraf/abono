@@ -21,23 +21,25 @@ struct AllSubscriptionsModalView: View {
         VStack(spacing: 20) {
             HStack {
                 Text("All Subscriptions")
-                    .font(.title2).bold()
+                    .font(.title3).bold()
                 Spacer()
                 Button {
                     sheetButtonTapped()
                 } label: {
                     Text(status == .opened ? "Close" : "See more")
-                        .font(.title2).bold()
+                        .font(.title3).bold()
                     Image(systemName: status == .opened ? "arrow.down" : "arrow.up")
                 }
             }
             
-            TextField("Search for ...", text: $searchText)
-                .font(.title2)
-                .padding()
-                .foregroundColor(.black)
-                .background(Color(red: 240/255, green: 242/255, blue: 249/255, opacity: 1.0))
-                .clipShape(Capsule())
+            if status == .opened {
+                TextField("Search for ...", text: $searchText)
+                    .font(.title3)
+                    .padding()
+                    .foregroundColor(.black)
+                    .background(Color(red: 240/255, green: 242/255, blue: 249/255, opacity: 1.0))
+                    .clipShape(Capsule())
+            }
             
             List {
                 ForEach(0..<10) { _ in

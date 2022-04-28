@@ -46,7 +46,7 @@ struct BottomSheetView<Content: View>: View {
         self.content = content()
         _isOpen = isOpen
     }
-    
+    @State var show = false
     var body: some View {
         GeometryReader { geometry in
             VStack(spacing: 0) {
@@ -58,7 +58,7 @@ struct BottomSheetView<Content: View>: View {
             .cornerRadius(Constants.radius)
             .frame(height: geometry.size.height, alignment: .bottom)
             .offset(y: max(offset + translation, 0))
-            .animation(.interactiveSpring())
+            .animation(.interactiveSpring(), value: isOpen)
             .gesture(
                 DragGesture().updating($translation) { value, state, _ in
                     state = value.translation.height
