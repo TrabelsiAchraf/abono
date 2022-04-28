@@ -19,7 +19,7 @@ struct SubscriptionItemView: View {
             VStack(alignment: .leading) {
                 Text("Netflix")
                     .font(.title2).bold()
-                Text("Entertainment")
+                Text("30 September 2019")
                     .font(.caption)
                     .foregroundColor(Color(red: 196/255, green: 206/255, blue: 230/255, opacity: 1.0))
             }

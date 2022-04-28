@@ -28,11 +28,23 @@ struct ContentView: View {
                 UpcomingSubscriptionsView()
                     .frame(height: geometry.frame(in: .global).height * 0.3)
                     .padding(.horizontal, 10)
+                
+                PieChartView(values: [1300, 500, 300],
+                             colors: [Color.blue, Color.green, Color.orange],
+                             names: ["Rent", "Transport", "Education"],
+                             backgroundColor: .white,
+                             innerRadiusFraction: 0.6)
+                .frame(width: geometry.frame(in: .global).height * 0.28,
+                       height: geometry.frame(in: .global).height * 0.28)
+                
+                Rectangle()
+                    .stroke(Color.clear)
+                    .frame(height: geometry.frame(in: .global).height * 0.3)
             }
             
             BottomSheetView(
                 isOpen: $bottomSheetShown,
-                maxHeight: geometry.frame(in: .global).height * 1
+                maxHeight: geometry.frame(in: .global).height * 0.92
             ) {
                 AllSubscriptionsModalView(status: bottomSheetShown ? .constant(.opened) : .constant(.closed), sheetButtonTapped: {
                     bottomSheetShown.toggle()

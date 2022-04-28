@@ -18,7 +18,7 @@ struct UpcomingSubscriptionsView: View {
                     .font(.title3).bold()
                 Spacer()
             }
-            ScrollView(.horizontal) {
+            ScrollView(.horizontal, showsIndicators: false) {
                 LazyHGrid(rows: gridItems, alignment: .center, spacing: 20) {
                     ForEach((1...4), id: \.self) { number in
                         SubscriptionCardView()
