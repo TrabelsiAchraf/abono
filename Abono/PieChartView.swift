@@ -55,7 +55,6 @@ struct PieChartView: View {
                     }
                 }
             }
-            .foregroundColor(.black)
         }
     }
 }

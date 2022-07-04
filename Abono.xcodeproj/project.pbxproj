@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD2E6CE2286F3E6E00800D85 /* CurrentConsoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2E6CE1286F3E6E00800D85 /* CurrentConsoView.swift */; };
+		FD2E6CE4287138DE00800D85 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2E6CE3287138DE00800D85 /* HeaderView.swift */; };
+		FD2E6CE6287138FD00800D85 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2E6CE5287138FD00800D85 /* SettingsView.swift */; };
+		FD2E6CE8287139A700800D85 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2E6CE7287139A700800D85 /* StatsView.swift */; };
 		FD4379B22818A65E0036AE8B /* AbonoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4379B12818A65E0036AE8B /* AbonoApp.swift */; };
 		FD4379B42818A65E0036AE8B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4379B32818A65E0036AE8B /* ContentView.swift */; };
 		FD4379B62818A65F0036AE8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD4379B52818A65F0036AE8B /* Assets.xcassets */; };
@@ -44,6 +48,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD2E6CE1286F3E6E00800D85 /* CurrentConsoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentConsoView.swift; sourceTree = "<group>"; };
+		FD2E6CE3287138DE00800D85 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		FD2E6CE5287138FD00800D85 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		FD2E6CE7287139A700800D85 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 		FD4379AE2818A65E0036AE8B /* Abono.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Abono.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD4379B12818A65E0036AE8B /* AbonoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbonoApp.swift; sourceTree = "<group>"; };
 		FD4379B32818A65E0036AE8B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -124,10 +132,14 @@
 				FD4379FE281A9E7C0036AE8B /* AllSubscriptionsModalView.swift */,
 				FDADE24E281AC28100C133DD /* SubscriptionItemView.swift */,
 				FDADE24C281ABBA700C133DD /* BottomSheetView.swift */,
-				FD4379B52818A65F0036AE8B /* Assets.xcassets */,
-				FD4379B72818A65F0036AE8B /* Preview Content */,
+				FD2E6CE1286F3E6E00800D85 /* CurrentConsoView.swift */,
 				FDADE250281ADC2200C133DD /* PieSliceView.swift */,
 				FDADE252281ADCDB00C133DD /* PieChartView.swift */,
+				FD2E6CE3287138DE00800D85 /* HeaderView.swift */,
+				FD2E6CE5287138FD00800D85 /* SettingsView.swift */,
+				FD2E6CE7287139A700800D85 /* StatsView.swift */,
+				FD4379B52818A65F0036AE8B /* Assets.xcassets */,
+				FD4379B72818A65F0036AE8B /* Preview Content */,
 			);
 			path = Abono;
 			sourceTree = "<group>";
@@ -289,9 +301,12 @@
 			files = (
 				FDADE253281ADCDB00C133DD /* PieChartView.swift in Sources */,
 				FD4379DE2818AB450036AE8B /* TopAmountSectionView.swift in Sources */,
+				FD2E6CE2286F3E6E00800D85 /* CurrentConsoView.swift in Sources */,
 				FD4379FB281A981C0036AE8B /* UpcomingSubscriptionsView.swift in Sources */,
+				FD2E6CE8287139A700800D85 /* StatsView.swift in Sources */,
 				FDADE24F281AC28100C133DD /* SubscriptionItemView.swift in Sources */,
 				FDADE24D281ABBA700C133DD /* BottomSheetView.swift in Sources */,
+				FD2E6CE6287138FD00800D85 /* SettingsView.swift in Sources */,
 				FDADE251281ADC2200C133DD /* PieSliceView.swift in Sources */,
 				FD4379FD281A99B00036AE8B /* ProgressCircleView.swift in Sources */,
 				FD4379FF281A9E7C0036AE8B /* AllSubscriptionsModalView.swift in Sources */,
@@ -299,6 +314,7 @@
 				FD4379E02818ACDD0036AE8B /* SubscriptionCardView.swift in Sources */,
 				FD4379DC2818AA4E0036AE8B /* AmountCardView.swift in Sources */,
 				FD4379B22818A65E0036AE8B /* AbonoApp.swift in Sources */,
+				FD2E6CE4287138DE00800D85 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

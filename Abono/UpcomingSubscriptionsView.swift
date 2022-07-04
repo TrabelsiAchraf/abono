@@ -9,24 +9,30 @@ import SwiftUI
 
 struct UpcomingSubscriptionsView: View {
     
-    var gridItems: [GridItem] = [GridItem()]
+    struct Subscription {
+        let id = UUID()
+        let name: String
+        let icon: String
+    }
+    let subs: [Subscription] = [Subscription(name: "Netflix", icon: "netflix_ic"),
+                                Subscription(name: "Uber Eat", icon: "uber_eat_ic"),
+                                Subscription(name: "Netflix", icon: "netflix_ic")]
     
     var body: some View {
         VStack {
             HStack {
                 Text("Upcoming")
-                    .font(.title3).bold()
+                    .font(.system(size: 16)).bold()
                 Spacer()
             }
             ScrollView(.horizontal, showsIndicators: false) {
-                LazyHGrid(rows: gridItems, alignment: .center, spacing: 20) {
-                    ForEach((1...4), id: \.self) { number in
-                        SubscriptionCardView()
+                HStack {
+                    ForEach(subs, id: \.id) { subscription in
+                        SubscriptionCardView(name: subscription.name, icon: subscription.icon)
                     }
                 }
                 .background(Color(red: 240/255, green: 242/255, blue: 249/255, opacity: 1.0))
             }
-            .frame(minHeight: 100, maxHeight: .infinity)
         }
     }
 }

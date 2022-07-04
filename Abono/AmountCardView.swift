@@ -14,11 +14,11 @@ struct AmountCardView: View {
     var isEnabled: Bool = true
     
     var body: some View {
-        VStack {
+        VStack(spacing: 2) {
             Text(title)
                 .font(.system(size: 18))
             Text(amount)
-                .font(.title).bold()
+                .font(.system(size: 26)).bold()
         }
         .foregroundColor(isEnabled ? .black : .gray)
     }

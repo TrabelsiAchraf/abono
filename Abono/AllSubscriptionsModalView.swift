@@ -43,8 +43,8 @@ struct AllSubscriptionsModalView: View {
             
             ScrollView(axes, showsIndicators: false) {
                 ForEach(0..<10) { _ in
-                    SubscriptionItemView()
-                        .padding(.vertical, 10)
+                    SubscriptionItemView(icon: "netflix_ic", name: "Netflix")
+                        .padding(.vertical, 2)
                 }
             }
             .listStyle(.plain)

@@ -11,7 +11,23 @@ import SwiftUI
 struct AbonoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                ContentView()
+                    .tabItem {
+                        Image(systemName: "house.fill")
+                        Text("HOME")
+                    }
+                StatsView()
+                    .tabItem {
+                        Image(systemName: "chart.line.uptrend.xyaxis.circle.fill")
+                        Text("STATS")
+                    }
+                SettingsView()
+                    .tabItem {
+                        Image(systemName: "gearshape.fill")
+                        Text("SETTINGS")
+                    }
+            }
         }
     }
 }

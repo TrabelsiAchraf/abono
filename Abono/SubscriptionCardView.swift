@@ -8,22 +8,25 @@
 import SwiftUI
 
 struct SubscriptionCardView: View {
+    
+    let name: String
+    let icon: String
     var body: some View {
         VStack(spacing: 20) {
             HStack {
-                Image("netflix_ic")
+                Image(icon)
                     .resizable()
                     .scaledToFit()
                     .frame(width: 50, height: 50)
                     .cornerRadius(10)
                 Text("$5,99 / mo")
-                    .font(.system(size: 20)).bold()
+                    .font(.system(size: 18)).bold()
             }
             
             HStack {
                 VStack(alignment: .leading) {
-                    Text("Netflix")
-                        .font(.title2).bold()
+                    Text(name)
+                        .font(.system(size: 16)).bold()
                     Text("Entertainment")
                         .font(.caption)
                         .foregroundColor(Color(red: 196/255, green: 206/255, blue: 230/255, opacity: 1.0))
@@ -33,8 +36,8 @@ struct SubscriptionCardView: View {
             
             HStack {
                 ProgressCircleView(progress: .constant(0.8), color: .constant(.blue))
-                Text("days keft")
-                    .bold()
+                Text("days left")
+                    .font(.system(size: 12)).bold()
                 Spacer()
             }
         }
@@ -46,7 +49,7 @@ struct SubscriptionCardView: View {
 
 struct SubscriptionCardView_Previews: PreviewProvider {
     static var previews: some View {
-        SubscriptionCardView()
+        SubscriptionCardView(name: "Netflix", icon: "netflix_ic")
             .previewLayout(.sizeThatFits)
             .padding()
     }
