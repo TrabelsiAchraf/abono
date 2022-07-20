@@ -23,7 +23,7 @@ struct SubscriptionItemView: View {
                     .font(.system(size: 16)).bold()
                 Text("30 September 2019")
                     .font(.caption)
-                    .foregroundColor(Color(red: 196/255, green: 206/255, blue: 230/255, opacity: 1.0))
+                    .foregroundColor(Color.second)
             }
             .padding(.leading, 10)
             
@@ -35,7 +35,7 @@ struct SubscriptionItemView: View {
         .padding()
         .overlay(
             RoundedRectangle(cornerRadius: 20)
-                .stroke(Color(red: 196/255, green: 206/255, blue: 230/255, opacity: 1.0))
+                .stroke(Color.second)
         )
         .background(.white)
     }

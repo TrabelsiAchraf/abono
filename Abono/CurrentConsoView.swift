@@ -29,7 +29,7 @@ struct CurrentConsoView: View {
                             .font(.title2).bold()
                         Text("Current value")
                             .font(.caption)
-                            .foregroundColor(Color(red: 196/255, green: 206/255, blue: 230/255, opacity: 1.0))
+                            .foregroundColor(Color.second)
                     }
                     Spacer()
                 }

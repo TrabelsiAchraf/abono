@@ -29,7 +29,7 @@ struct SubscriptionCardView: View {
                         .font(.system(size: 16)).bold()
                     Text("Entertainment")
                         .font(.caption)
-                        .foregroundColor(Color(red: 196/255, green: 206/255, blue: 230/255, opacity: 1.0))
+                        .foregroundColor(Color.second)
                 }
                 Spacer()
             }

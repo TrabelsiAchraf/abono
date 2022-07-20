@@ -25,12 +25,9 @@ struct ContentView: View {
                     
                     CurrentConsoView()
                         .padding(.horizontal, 20)
-                    
-                    Spacer()
-                    
                 }
             }
-            .background(Color(red: 240/255, green: 242/255, blue: 249/255, opacity: 1.0))
+            .background(Color.defaultBackground)
             .toolbar {
                 ToolbarItem(placement: .principal) {
                     HeaderView()
