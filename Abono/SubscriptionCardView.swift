@@ -11,6 +11,8 @@ struct SubscriptionCardView: View {
     
     let name: String
     let icon: String
+    let amount: String
+    let daysLeft: (progressValue: Float, progressColor: Color, text: String)
     var body: some View {
         VStack(spacing: 20) {
             HStack {
@@ -19,7 +21,7 @@ struct SubscriptionCardView: View {
                     .scaledToFit()
                     .frame(width: 50, height: 50)
                     .cornerRadius(10)
-                Text("$5,99 / mo")
+                Text(amount)
                     .font(.system(size: 18)).bold()
             }
             
@@ -35,7 +37,9 @@ struct SubscriptionCardView: View {
             }
             
             HStack {
-                ProgressCircleView(progress: .constant(0.8), color: .constant(.blue))
+                ProgressCircleView(progress: daysLeft.progressValue,
+                                   color: daysLeft.progressColor,
+                                   text: daysLeft.text)
                 Text("days left")
                     .font(.system(size: 12)).bold()
                 Spacer()
@@ -49,7 +53,10 @@ struct SubscriptionCardView: View {
 
 struct SubscriptionCardView_Previews: PreviewProvider {
     static var previews: some View {
-        SubscriptionCardView(name: "Netflix", icon: "netflix_ic")
+        SubscriptionCardView(name: "Netflix",
+                             icon: "netflix_ic",
+                             amount: "$5,99 / mo",
+                             daysLeft: (progressValue: 0.85, progressColor: .blue, text: "28"))
             .previewLayout(.sizeThatFits)
             .padding()
     }

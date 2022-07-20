@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct ProgressCircleView: View {
-    @Binding var progress: Float
-    @Binding var color: Color
+    var progress: Float
+    var color: Color
+    var text: String
     private let lineWidth: CGFloat = 5.0
     
     var body: some View {
@@ -25,7 +26,7 @@ struct ProgressCircleView: View {
                 .foregroundColor(color)
                 .rotationEffect(Angle(degrees: 270.0))
             
-            Text(String(format: "%.0f", min(progress, 1.0)*100.0))
+            Text(text)
                 .font(.system(size: 16))
                 .bold()
         }
@@ -35,7 +36,7 @@ struct ProgressCircleView: View {
 
 struct ProgressCircleView_Previews: PreviewProvider {
     static var previews: some View {
-        ProgressCircleView(progress: .constant(0.8), color: .constant(.blue))
+        ProgressCircleView(progress: 0.8, color: .blue, text: "8")
             .previewLayout(.sizeThatFits)
             .padding()
     }
