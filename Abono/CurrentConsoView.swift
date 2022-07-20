@@ -54,6 +54,8 @@ struct CurrentConsoView: View {
 struct CurrentConsoView_Previews: PreviewProvider {
     static var previews: some View {
         CurrentConsoView()
+            .previewLayout(.sizeThatFits)
+            .padding()
     }
 }
 

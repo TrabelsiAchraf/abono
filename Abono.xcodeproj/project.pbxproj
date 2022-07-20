@@ -24,7 +24,6 @@
 		FD4379FB281A981C0036AE8B /* UpcomingSubscriptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4379FA281A981C0036AE8B /* UpcomingSubscriptionsView.swift */; };
 		FD4379FD281A99B00036AE8B /* ProgressCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4379FC281A99B00036AE8B /* ProgressCircleView.swift */; };
 		FD4379FF281A9E7C0036AE8B /* AllSubscriptionsModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4379FE281A9E7C0036AE8B /* AllSubscriptionsModalView.swift */; };
-		FDADE24D281ABBA700C133DD /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDADE24C281ABBA700C133DD /* BottomSheetView.swift */; };
 		FDADE24F281AC28100C133DD /* SubscriptionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDADE24E281AC28100C133DD /* SubscriptionItemView.swift */; };
 		FDADE251281ADC2200C133DD /* PieSliceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDADE250281ADC2200C133DD /* PieSliceView.swift */; };
 		FDADE253281ADCDB00C133DD /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDADE252281ADCDB00C133DD /* PieChartView.swift */; };
@@ -68,7 +67,6 @@
 		FD4379FA281A981C0036AE8B /* UpcomingSubscriptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingSubscriptionsView.swift; sourceTree = "<group>"; };
 		FD4379FC281A99B00036AE8B /* ProgressCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleView.swift; sourceTree = "<group>"; };
 		FD4379FE281A9E7C0036AE8B /* AllSubscriptionsModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSubscriptionsModalView.swift; sourceTree = "<group>"; };
-		FDADE24C281ABBA700C133DD /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
 		FDADE24E281AC28100C133DD /* SubscriptionItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionItemView.swift; sourceTree = "<group>"; };
 		FDADE250281ADC2200C133DD /* PieSliceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieSliceView.swift; sourceTree = "<group>"; };
 		FDADE252281ADCDB00C133DD /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
@@ -131,7 +129,6 @@
 				FD4379FC281A99B00036AE8B /* ProgressCircleView.swift */,
 				FD4379FE281A9E7C0036AE8B /* AllSubscriptionsModalView.swift */,
 				FDADE24E281AC28100C133DD /* SubscriptionItemView.swift */,
-				FDADE24C281ABBA700C133DD /* BottomSheetView.swift */,
 				FD2E6CE1286F3E6E00800D85 /* CurrentConsoView.swift */,
 				FDADE250281ADC2200C133DD /* PieSliceView.swift */,
 				FDADE252281ADCDB00C133DD /* PieChartView.swift */,
@@ -305,7 +302,6 @@
 				FD4379FB281A981C0036AE8B /* UpcomingSubscriptionsView.swift in Sources */,
 				FD2E6CE8287139A700800D85 /* StatsView.swift in Sources */,
 				FDADE24F281AC28100C133DD /* SubscriptionItemView.swift in Sources */,
-				FDADE24D281ABBA700C133DD /* BottomSheetView.swift in Sources */,
 				FD2E6CE6287138FD00800D85 /* SettingsView.swift in Sources */,
 				FDADE251281ADC2200C133DD /* PieSliceView.swift in Sources */,
 				FD4379FD281A99B00036AE8B /* ProgressCircleView.swift in Sources */,

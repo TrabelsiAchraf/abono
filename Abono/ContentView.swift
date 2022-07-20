@@ -21,6 +21,7 @@ struct ContentView: View {
                     
                     UpcomingSubscriptionsView()
                         .padding(.horizontal, 20)
+                        .padding(.bottom, 10)
                     
                     CurrentConsoView()
                         .padding(.horizontal, 20)
