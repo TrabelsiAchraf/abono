@@ -11,7 +11,7 @@ struct CurrentConsoView: View {
     var body: some View {
         VStack {
             HStack {
-                Text("Current value")
+                Text("Already paid")
                     .font(.system(size: 16)).bold()
                 Spacer()
                 Button {

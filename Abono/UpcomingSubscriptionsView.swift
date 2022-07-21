@@ -29,6 +29,12 @@ struct UpcomingSubscriptionsView: View {
                 Text("Upcoming")
                     .font(.system(size: 16)).bold()
                 Spacer()
+                Button {
+                    
+                } label: {
+                    Text("See All")
+                        .font(.system(size: 14)).bold()
+                }
             }
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {

@@ -28,6 +28,9 @@
 		FDADE251281ADC2200C133DD /* PieSliceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDADE250281ADC2200C133DD /* PieSliceView.swift */; };
 		FDADE253281ADCDB00C133DD /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDADE252281ADCDB00C133DD /* PieChartView.swift */; };
 		FDC6F50F288873F0007A37FD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC6F50E288873F0007A37FD /* Colors.swift */; };
+		FDC6F5132889AC38007A37FD /* SocialMediaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC6F5122889AC38007A37FD /* SocialMediaManager.swift */; };
+		FDC6F5152889B1AA007A37FD /* ContactUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC6F5142889B1AA007A37FD /* ContactUsView.swift */; };
+		FDD10A772889B95C00C4ADA7 /* EmojyButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD10A762889B95C00C4ADA7 /* EmojyButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +75,10 @@
 		FDADE250281ADC2200C133DD /* PieSliceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieSliceView.swift; sourceTree = "<group>"; };
 		FDADE252281ADCDB00C133DD /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
 		FDC6F50E288873F0007A37FD /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		FDC6F5112889A99D007A37FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDC6F5122889AC38007A37FD /* SocialMediaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaManager.swift; sourceTree = "<group>"; };
+		FDC6F5142889B1AA007A37FD /* ContactUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsView.swift; sourceTree = "<group>"; };
+		FDD10A762889B95C00C4ADA7 /* EmojyButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojyButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +129,7 @@
 		FD4379B02818A65E0036AE8B /* Abono */ = {
 			isa = PBXGroup;
 			children = (
+				FDC6F5112889A99D007A37FD /* Info.plist */,
 				FD4379B12818A65E0036AE8B /* AbonoApp.swift */,
 				FD4379B32818A65E0036AE8B /* ContentView.swift */,
 				FD4379DB2818AA4E0036AE8B /* AmountCardView.swift */,
@@ -137,9 +145,12 @@
 				FD2E6CE3287138DE00800D85 /* HeaderView.swift */,
 				FD2E6CE5287138FD00800D85 /* SettingsView.swift */,
 				FD2E6CE7287139A700800D85 /* StatsView.swift */,
+				FDC6F5122889AC38007A37FD /* SocialMediaManager.swift */,
+				FDC6F5142889B1AA007A37FD /* ContactUsView.swift */,
 				FDC6F50E288873F0007A37FD /* Colors.swift */,
 				FD4379B52818A65F0036AE8B /* Assets.xcassets */,
 				FD4379B72818A65F0036AE8B /* Preview Content */,
+				FDD10A762889B95C00C4ADA7 /* EmojyButtonView.swift */,
 			);
 			path = Abono;
 			sourceTree = "<group>";
@@ -299,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDD10A772889B95C00C4ADA7 /* EmojyButtonView.swift in Sources */,
 				FDADE253281ADCDB00C133DD /* PieChartView.swift in Sources */,
 				FD4379DE2818AB450036AE8B /* TopAmountSectionView.swift in Sources */,
 				FD2E6CE2286F3E6E00800D85 /* CurrentConsoView.swift in Sources */,
@@ -310,11 +322,13 @@
 				FD4379FD281A99B00036AE8B /* ProgressCircleView.swift in Sources */,
 				FDC6F50F288873F0007A37FD /* Colors.swift in Sources */,
 				FD4379FF281A9E7C0036AE8B /* AllSubscriptionsModalView.swift in Sources */,
+				FDC6F5152889B1AA007A37FD /* ContactUsView.swift in Sources */,
 				FD4379B42818A65E0036AE8B /* ContentView.swift in Sources */,
 				FD4379E02818ACDD0036AE8B /* SubscriptionCardView.swift in Sources */,
 				FD4379DC2818AA4E0036AE8B /* AmountCardView.swift in Sources */,
 				FD4379B22818A65E0036AE8B /* AbonoApp.swift in Sources */,
 				FD2E6CE4287138DE00800D85 /* HeaderView.swift in Sources */,
+				FDC6F5132889AC38007A37FD /* SocialMediaManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +490,7 @@
 				DEVELOPMENT_TEAM = QN66UQNDZR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Abono/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -505,6 +520,7 @@
 				DEVELOPMENT_TEAM = QN66UQNDZR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Abono/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -19,6 +19,11 @@ struct AbonoApp: App {
                     }
                 StatsView()
                     .tabItem {
+                        Image(systemName: "plus.square.fill.on.square.fill")
+                        Text("ADD")
+                    }
+                StatsView()
+                    .tabItem {
                         Image(systemName: "chart.line.uptrend.xyaxis.circle.fill")
                         Text("STATS")
                     }
