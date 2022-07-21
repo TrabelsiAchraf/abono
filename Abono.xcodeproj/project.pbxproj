@@ -23,7 +23,7 @@
 		FD4379E02818ACDD0036AE8B /* SubscriptionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4379DF2818ACDD0036AE8B /* SubscriptionCardView.swift */; };
 		FD4379FB281A981C0036AE8B /* UpcomingSubscriptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4379FA281A981C0036AE8B /* UpcomingSubscriptionsView.swift */; };
 		FD4379FD281A99B00036AE8B /* ProgressCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4379FC281A99B00036AE8B /* ProgressCircleView.swift */; };
-		FD4379FF281A9E7C0036AE8B /* AllSubscriptionsModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4379FE281A9E7C0036AE8B /* AllSubscriptionsModalView.swift */; };
+		FD4379FF281A9E7C0036AE8B /* AllSubscriptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4379FE281A9E7C0036AE8B /* AllSubscriptionsView.swift */; };
 		FDADE24F281AC28100C133DD /* SubscriptionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDADE24E281AC28100C133DD /* SubscriptionItemView.swift */; };
 		FDADE251281ADC2200C133DD /* PieSliceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDADE250281ADC2200C133DD /* PieSliceView.swift */; };
 		FDADE253281ADCDB00C133DD /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDADE252281ADCDB00C133DD /* PieChartView.swift */; };
@@ -70,7 +70,7 @@
 		FD4379DF2818ACDD0036AE8B /* SubscriptionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionCardView.swift; sourceTree = "<group>"; };
 		FD4379FA281A981C0036AE8B /* UpcomingSubscriptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingSubscriptionsView.swift; sourceTree = "<group>"; };
 		FD4379FC281A99B00036AE8B /* ProgressCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleView.swift; sourceTree = "<group>"; };
-		FD4379FE281A9E7C0036AE8B /* AllSubscriptionsModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSubscriptionsModalView.swift; sourceTree = "<group>"; };
+		FD4379FE281A9E7C0036AE8B /* AllSubscriptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSubscriptionsView.swift; sourceTree = "<group>"; };
 		FDADE24E281AC28100C133DD /* SubscriptionItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionItemView.swift; sourceTree = "<group>"; };
 		FDADE250281ADC2200C133DD /* PieSliceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieSliceView.swift; sourceTree = "<group>"; };
 		FDADE252281ADCDB00C133DD /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
@@ -137,7 +137,7 @@
 				FD4379DF2818ACDD0036AE8B /* SubscriptionCardView.swift */,
 				FD4379FA281A981C0036AE8B /* UpcomingSubscriptionsView.swift */,
 				FD4379FC281A99B00036AE8B /* ProgressCircleView.swift */,
-				FD4379FE281A9E7C0036AE8B /* AllSubscriptionsModalView.swift */,
+				FD4379FE281A9E7C0036AE8B /* AllSubscriptionsView.swift */,
 				FDADE24E281AC28100C133DD /* SubscriptionItemView.swift */,
 				FD2E6CE1286F3E6E00800D85 /* CurrentConsoView.swift */,
 				FDADE250281ADC2200C133DD /* PieSliceView.swift */,
@@ -321,7 +321,7 @@
 				FDADE251281ADC2200C133DD /* PieSliceView.swift in Sources */,
 				FD4379FD281A99B00036AE8B /* ProgressCircleView.swift in Sources */,
 				FDC6F50F288873F0007A37FD /* Colors.swift in Sources */,
-				FD4379FF281A9E7C0036AE8B /* AllSubscriptionsModalView.swift in Sources */,
+				FD4379FF281A9E7C0036AE8B /* AllSubscriptionsView.swift in Sources */,
 				FDC6F5152889B1AA007A37FD /* ContactUsView.swift in Sources */,
 				FD4379B42818A65E0036AE8B /* ContentView.swift in Sources */,
 				FD4379E02818ACDD0036AE8B /* SubscriptionCardView.swift in Sources */,
