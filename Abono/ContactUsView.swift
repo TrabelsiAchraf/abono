@@ -44,25 +44,19 @@ struct ContactUsView: View {
             
             Text("How to you feel ? (Optional)")
             HStack {
-                EmojyButtonView(state: .veryHappy, isOn: $feedbackSelection[0]) {
-                    feedbackSelection = [false, false, false, false, false]
-                }
-                EmojyButtonView(state: .happy, isOn: $feedbackSelection[1]) {
-                    feedbackSelection = [false, false, false, false, false]
-                }
-                EmojyButtonView(state: .unsatisfied, isOn: $feedbackSelection[2]) {
-                    feedbackSelection = [false, false, false, false, false]
-                }
-                EmojyButtonView(state: .unhappy, isOn: $feedbackSelection[3]) {
-                    feedbackSelection = [false, false, false, false, false]
-                }
-                EmojyButtonView(state: .angry, isOn: $feedbackSelection[4]) {
-                    feedbackSelection = [false, false, false, false, false]
-                }
+                EmojyButtonView(state: .veryHappy, isOn: $feedbackSelection[0], select: resetFeedBack)
+                EmojyButtonView(state: .happy, isOn: $feedbackSelection[1], select: resetFeedBack)
+                EmojyButtonView(state: .unsatisfied, isOn: $feedbackSelection[2], select: resetFeedBack)
+                EmojyButtonView(state: .unhappy, isOn: $feedbackSelection[3], select: resetFeedBack)
+                EmojyButtonView(state: .angry, isOn: $feedbackSelection[4], select: resetFeedBack)
             }
             .padding(.bottom, 50)
             .padding(.top, 10)
         }
+    }
+    
+    func resetFeedBack() {
+        feedbackSelection = [false, false, false, false, false]
     }
 }
 
