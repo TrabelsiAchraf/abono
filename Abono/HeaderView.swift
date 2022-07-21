@@ -10,24 +10,15 @@ import SwiftUI
 struct HeaderView: View {
     var body: some View {
         HStack {
-            Button {
-                
-            } label: {
-                Image("user")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 35, height: 35)
-                    .clipShape(Circle())
-            }
-
             Spacer()
             Button {
                 
             } label: {
-                Image(systemName: "plus.circle.fill")
+                Image("avatar")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 30, height: 30)
+                    .frame(width: 35, height: 35)
+                    .clipShape(Circle())
             }
         }
     }
