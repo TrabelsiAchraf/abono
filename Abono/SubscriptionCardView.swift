@@ -48,6 +48,7 @@ struct SubscriptionCardView: View {
         .padding()
         .background(Color.white)
         .cornerRadius(30)
+        .shadow(color: .black.opacity(0.1), radius: 1, x: 0, y: 0)
     }
 }
 

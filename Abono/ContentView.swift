@@ -25,6 +25,7 @@ struct ContentView: View {
                     
                     AlreadyPaidView()
                         .padding(.horizontal, 20)
+                        .shadow(color: .black.opacity(0.1), radius: 1, x: 0, y: 0)
                 }
             }
             .background(Color.defaultBackground)
