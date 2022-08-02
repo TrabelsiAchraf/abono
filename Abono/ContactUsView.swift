@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContactUsView: View {
+    
     @State private var showingAlert = false
     
     let helpReasons = ["I'd like to request a new feature",
@@ -19,7 +20,18 @@ struct ContactUsView: View {
     
     @State private var tellUsTextField: String = ""
     @State private var isOn: Bool = false
-    @State private var feedbackSelection: [Bool] = [false, false, false, false, false]
+    
+    enum EmojyState: String {
+        case veryHappy = "😁"
+        case happy = "🙂"
+        case unsatisfied = "😑"
+        case unhappy = "😕"
+        case angry = "😤"
+    }
+
+    private var feedbacks: [EmojyState] = [.angry, .unhappy, .unsatisfied, .happy, .veryHappy]
+    @State private var selectedFeedback: EmojyState = .happy
+    
     
     var body: some View {
         VStack {
@@ -39,17 +51,20 @@ struct ContactUsView: View {
                         Text("Have you read our FAQ yet ?")
                     }
                     
-                    VStack {
-                        Text("How to you feel ? (Optional)")
-                        HStack {
-                            EmojyButtonView(state: .veryHappy, isOn: $feedbackSelection[0], select: resetFeedBack)
-                            EmojyButtonView(state: .happy, isOn: $feedbackSelection[1], select: resetFeedBack)
-                            EmojyButtonView(state: .unsatisfied, isOn: $feedbackSelection[2], select: resetFeedBack)
-                            EmojyButtonView(state: .unhappy, isOn: $feedbackSelection[3], select: resetFeedBack)
-                            EmojyButtonView(state: .angry, isOn: $feedbackSelection[4], select: resetFeedBack)
+                    VStack(alignment: .leading) {
+                        Text("How to you feel ?")
+                        Picker("How can we help ?", selection: $selectedFeedback) {
+                            ForEach(feedbacks, id: \.self) {
+                                Circle()
+                                    .fill(Color.blue)
+                                    .frame(width: 55, height: 55)
+                                    .overlay(
+                                        Text($0.rawValue)
+                                            .font(.title)
+                                    )
+                            }
                         }
-                        .padding(.bottom, 10)
-                        .padding(.top, 10)
+                        .pickerStyle(.segmented)
                     }
                 } header: {
                     Text("Contact Us")
@@ -74,10 +89,6 @@ struct ContactUsView: View {
         .alert("Message sent", isPresented: $showingAlert) {
             Button("OK", role: .cancel) { }
         }
-    }
-    
-    func resetFeedBack() {
-        feedbackSelection = [false, false, false, false, false]
     }
 }
 
