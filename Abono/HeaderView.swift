@@ -17,8 +17,13 @@ struct HeaderView: View {
                 Image("avatar")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 35, height: 35)
+                    .frame(width: 40, height: 40)
                     .clipShape(Circle())
+                    .overlay(
+                        Circle()
+                            .stroke(lineWidth: 2.0)
+                            .foregroundColor(.progressView)
+                    )
             }
         }
     }
