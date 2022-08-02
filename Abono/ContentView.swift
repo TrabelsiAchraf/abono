@@ -33,6 +33,7 @@ struct ContentView: View {
                     HeaderView()
                 }
             }
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
