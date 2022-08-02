@@ -71,7 +71,7 @@ private struct ProgressBar: View {
                 Rectangle()
                     .frame(width: min(CGFloat(value)*geometry.size.width, geometry.size.width),
                                   height: geometry.size.height)
-                    .foregroundColor(Color(.systemBlue))
+                    .foregroundColor(.progressView)
             }
             .cornerRadius(45.0)
         }

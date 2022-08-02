@@ -10,4 +10,5 @@ import SwiftUI
 extension Color {
     static let defaultBackground: Color = Color("background")
     static let second: Color = Color("second")
+    static let progressView: Color = Color("progressView")
 }
