@@ -45,7 +45,7 @@ struct AlreadyPaidView: View {
                 }
                 .padding()
             }
-            .background(.white)
+            .background(Color.card)
             .cornerRadius(15)
         }
     }
@@ -53,9 +53,15 @@ struct AlreadyPaidView: View {
 
 struct CurrentConsoView_Previews: PreviewProvider {
     static var previews: some View {
-        AlreadyPaidView()
-            .previewLayout(.sizeThatFits)
+        Group {
+            AlreadyPaidView()
+                .previewLayout(.sizeThatFits)
             .padding()
+            AlreadyPaidView()
+                .preferredColorScheme(.dark)
+                .previewLayout(.sizeThatFits)
+                .padding()
+        }
     }
 }
 

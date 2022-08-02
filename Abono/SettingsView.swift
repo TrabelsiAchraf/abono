@@ -12,8 +12,8 @@ struct SettingsView: View {
     let currencies = ["EUR", "AUD", "INR", "TRY"]
     @State private var selectedCurrency = "EUR"
     
-    let appearances = ["System", "Dark", "Light"]
-    @State private var selectedAppearance = "System"
+    let appearances = [Appearance.system, Appearance.light, Appearance.dark]
+    @AppStorage("isDarkMode") private var selectedAppearance: Appearance = .system
     
     @State private var isNotificationOn: Bool = false
     let reminds = ["The same day", "1 day before", "2 days before",
@@ -35,7 +35,7 @@ struct SettingsView: View {
                     
                     Picker("Appearance", selection: $selectedAppearance) {
                         ForEach(appearances, id: \.self) {
-                            Text($0)
+                            Text($0.text)
                         }
                     }
                 } header: {

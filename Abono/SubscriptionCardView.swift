@@ -46,18 +46,27 @@ struct SubscriptionCardView: View {
             }
         }
         .padding()
-        .background(Color.white)
+        .background(Color.card)
         .cornerRadius(30)
     }
 }
 
 struct SubscriptionCardView_Previews: PreviewProvider {
     static var previews: some View {
-        SubscriptionCardView(name: "Netflix",
-                             icon: "netflix_ic",
-                             amount: "$5,99 / mo",
-                             daysLeft: (progressValue: 0.85, progressColor: .blue, text: "28"))
+        Group {
+            SubscriptionCardView(name: "Netflix",
+                                 icon: "netflix_ic",
+                                 amount: "$5,99 / mo",
+                                 daysLeft: (progressValue: 0.85, progressColor: .blue, text: "28"))
+                .previewLayout(.sizeThatFits)
+            .padding()
+            SubscriptionCardView(name: "Netflix",
+                                 icon: "netflix_ic",
+                                 amount: "$5,99 / mo",
+                                 daysLeft: (progressValue: 0.85, progressColor: .blue, text: "28"))
+            .preferredColorScheme(.dark)
             .previewLayout(.sizeThatFits)
             .padding()
+        }
     }
 }

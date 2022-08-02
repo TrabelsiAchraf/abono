@@ -37,14 +37,20 @@ struct SubscriptionItemView: View {
             RoundedRectangle(cornerRadius: 20)
                 .stroke(Color.second)
         )
-        .background(.white)
+        .background(Color.card)
     }
 }
 
 struct SubscriptionItemView_Previews: PreviewProvider {
     static var previews: some View {
-        SubscriptionItemView(icon: "netflix_ic", name: "Netflix")
-            .previewLayout(.sizeThatFits)
+        Group {
+            SubscriptionItemView(icon: "netflix_ic", name: "Netflix")
+                .previewLayout(.sizeThatFits)
             .padding()
+            SubscriptionItemView(icon: "netflix_ic", name: "Netflix")
+                .preferredColorScheme(.dark)
+                .previewLayout(.sizeThatFits)
+                .padding()
+        }
     }
 }

@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct AbonoApp: App {
+    @AppStorage("isDarkMode") private var appearance: Appearance = .system
     var body: some Scene {
         WindowGroup {
             TabView {
@@ -33,6 +34,31 @@ struct AbonoApp: App {
                         Text("SETTINGS")
                     }
             }
+            .preferredColorScheme(appearance.value)
+        }
+    }
+}
+
+enum Appearance: String {
+    case system, light, dark
+    var value: ColorScheme? {
+        switch self {
+        case .system:
+            return nil
+        case .light:
+            return .light
+        case .dark:
+            return .dark
+        }
+    }
+    var text: String {
+        switch self {
+        case .system:
+            return "System"
+        case .light:
+            return "Light"
+        case .dark:
+            return "Dark"
         }
     }
 }

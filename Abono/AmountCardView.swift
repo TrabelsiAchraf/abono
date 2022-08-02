@@ -20,18 +20,30 @@ struct AmountCardView: View {
             Text(amount)
                 .font(.xlarge).bold()
         }
-        .foregroundColor(isEnabled ? .black : .gray)
+        .foregroundColor(isEnabled ? .amountTitle : .gray)
     }
 }
 
 struct AmountCardView_Previews: PreviewProvider {
     static var previews: some View {
-        AmountCardView(title: "Weekly", amount: "$0.00")
-            .previewLayout(.sizeThatFits)
+        Group {
+            AmountCardView(title: "Weekly", amount: "$0.00")
+                .previewLayout(.sizeThatFits)
             .padding()
+            AmountCardView(title: "Weekly", amount: "$0.00")
+                .preferredColorScheme(.dark)
+                .previewLayout(.sizeThatFits)
+                .padding()
+        }
         
-        AmountCardView(title: "Weekly", amount: "$0.00", isEnabled: false)
-            .previewLayout(.sizeThatFits)
+        Group {
+            AmountCardView(title: "Weekly", amount: "$0.00", isEnabled: false)
+                .previewLayout(.sizeThatFits)
             .padding()
+            AmountCardView(title: "Weekly", amount: "$0.00", isEnabled: false)
+                .preferredColorScheme(.dark)
+                .previewLayout(.sizeThatFits)
+                .padding()
+        }
     }
 }
