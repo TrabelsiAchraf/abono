@@ -10,7 +10,7 @@ import SwiftUI
 struct TabBottomView: View {
     
     let tabbarItems: [TabItemData]
-    var height: CGFloat = 50
+    var height: CGFloat = 55
     var width: CGFloat = UIScreen.main.bounds.width - 32
     @Binding var selectedIndex: Int
     

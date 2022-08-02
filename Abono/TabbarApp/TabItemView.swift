@@ -16,7 +16,7 @@ struct TabItemView: View {
             Image(systemName: data.image)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 20, height: 20)
+                .frame(width: 25, height: 25)
                 .padding()
                 .foregroundColor(isSelected ? Color.blue : Color.gray)
         }
