@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContactUsView: View {
+    @State private var showingAlert = false
     
     let helpReasons = ["I'd like to request a new feature",
                        "I have a question",
@@ -37,21 +38,41 @@ struct ContactUsView: View {
                     } label: {
                         Text("Have you read our FAQ yet ?")
                     }
+                    
+                    VStack {
+                        Text("How to you feel ? (Optional)")
+                        HStack {
+                            EmojyButtonView(state: .veryHappy, isOn: $feedbackSelection[0], select: resetFeedBack)
+                            EmojyButtonView(state: .happy, isOn: $feedbackSelection[1], select: resetFeedBack)
+                            EmojyButtonView(state: .unsatisfied, isOn: $feedbackSelection[2], select: resetFeedBack)
+                            EmojyButtonView(state: .unhappy, isOn: $feedbackSelection[3], select: resetFeedBack)
+                            EmojyButtonView(state: .angry, isOn: $feedbackSelection[4], select: resetFeedBack)
+                        }
+                        .padding(.bottom, 10)
+                        .padding(.top, 10)
+                    }
                 } header: {
                     Text("Contact Us")
+                } footer: {
+                    VStack {
+                        Button {
+                            showingAlert = true
+                        } label: {
+                            Text("Send me")
+                                .frame(width: 150, height: 70)
+                                .background(Color.progressView)
+                                .foregroundColor(.white)
+                                .font(.large.bold())
+                                .clipShape(RoundedRectangle(cornerRadius: 50))
+                        }
+                        .padding(.top, 30)
+                    }
+                    .frame(width: UIScreen.main.bounds.width, alignment: .center)
                 }
             }
-            
-            Text("How to you feel ? (Optional)")
-            HStack {
-                EmojyButtonView(state: .veryHappy, isOn: $feedbackSelection[0], select: resetFeedBack)
-                EmojyButtonView(state: .happy, isOn: $feedbackSelection[1], select: resetFeedBack)
-                EmojyButtonView(state: .unsatisfied, isOn: $feedbackSelection[2], select: resetFeedBack)
-                EmojyButtonView(state: .unhappy, isOn: $feedbackSelection[3], select: resetFeedBack)
-                EmojyButtonView(state: .angry, isOn: $feedbackSelection[4], select: resetFeedBack)
-            }
-            .padding(.bottom, 50)
-            .padding(.top, 10)
+        }
+        .alert("Message sent", isPresented: $showingAlert) {
+            Button("OK", role: .cancel) { }
         }
     }
     
@@ -62,7 +83,11 @@ struct ContactUsView: View {
 
 struct ContactUsView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactUsView()
+        Group {
+            ContactUsView()
+            ContactUsView()
+                .preferredColorScheme(.dark)
+        }
     }
 }
 
