@@ -12,7 +12,7 @@ struct SettingsView: View {
     let currencies = ["EUR", "AUD", "INR", "TRY"]
     @State private var selectedCurrency = "EUR"
     
-    let appearances = [Appearance.system, Appearance.light, Appearance.dark]
+    let appearances = [Appearance.system, Appearance.dark, Appearance.light]
     @AppStorage("isDarkMode") private var selectedAppearance: Appearance = .system
     
     @State private var isNotificationOn: Bool = false

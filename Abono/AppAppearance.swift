@@ -22,7 +22,7 @@ enum Appearance: String {
     var text: String {
         switch self {
         case .system:
-            return "System"
+            return "Automatic"
         case .light:
             return "Light"
         case .dark:
