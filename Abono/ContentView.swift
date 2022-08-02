@@ -23,7 +23,7 @@ struct ContentView: View {
                         .padding(.horizontal, 20)
                         .padding(.bottom, 10)
                     
-                    CurrentConsoView()
+                    AlreadyPaidView()
                         .padding(.horizontal, 20)
                 }
             }

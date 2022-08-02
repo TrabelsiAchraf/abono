@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CurrentConsoView: View {
+struct AlreadyPaidView: View {
     var body: some View {
         VStack {
             HStack {
@@ -53,7 +53,7 @@ struct CurrentConsoView: View {
 
 struct CurrentConsoView_Previews: PreviewProvider {
     static var previews: some View {
-        CurrentConsoView()
+        AlreadyPaidView()
             .previewLayout(.sizeThatFits)
             .padding()
     }

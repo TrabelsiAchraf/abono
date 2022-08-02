@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FD2E6CE2286F3E6E00800D85 /* CurrentConsoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2E6CE1286F3E6E00800D85 /* CurrentConsoView.swift */; };
+		FD2E6CE2286F3E6E00800D85 /* AlreadyPaidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2E6CE1286F3E6E00800D85 /* AlreadyPaidView.swift */; };
 		FD2E6CE4287138DE00800D85 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2E6CE3287138DE00800D85 /* HeaderView.swift */; };
 		FD2E6CE6287138FD00800D85 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2E6CE5287138FD00800D85 /* SettingsView.swift */; };
 		FD2E6CE8287139A700800D85 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2E6CE7287139A700800D85 /* StatsView.swift */; };
@@ -51,7 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FD2E6CE1286F3E6E00800D85 /* CurrentConsoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentConsoView.swift; sourceTree = "<group>"; };
+		FD2E6CE1286F3E6E00800D85 /* AlreadyPaidView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlreadyPaidView.swift; sourceTree = "<group>"; };
 		FD2E6CE3287138DE00800D85 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		FD2E6CE5287138FD00800D85 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		FD2E6CE7287139A700800D85 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
@@ -139,7 +139,7 @@
 				FD4379FC281A99B00036AE8B /* ProgressCircleView.swift */,
 				FD4379FE281A9E7C0036AE8B /* AllSubscriptionsView.swift */,
 				FDADE24E281AC28100C133DD /* SubscriptionItemView.swift */,
-				FD2E6CE1286F3E6E00800D85 /* CurrentConsoView.swift */,
+				FD2E6CE1286F3E6E00800D85 /* AlreadyPaidView.swift */,
 				FDADE250281ADC2200C133DD /* PieSliceView.swift */,
 				FDADE252281ADCDB00C133DD /* PieChartView.swift */,
 				FD2E6CE3287138DE00800D85 /* HeaderView.swift */,
@@ -313,7 +313,7 @@
 				FDD10A772889B95C00C4ADA7 /* EmojyButtonView.swift in Sources */,
 				FDADE253281ADCDB00C133DD /* PieChartView.swift in Sources */,
 				FD4379DE2818AB450036AE8B /* TopAmountSectionView.swift in Sources */,
-				FD2E6CE2286F3E6E00800D85 /* CurrentConsoView.swift in Sources */,
+				FD2E6CE2286F3E6E00800D85 /* AlreadyPaidView.swift in Sources */,
 				FD4379FB281A981C0036AE8B /* UpcomingSubscriptionsView.swift in Sources */,
 				FD2E6CE8287139A700800D85 /* StatsView.swift in Sources */,
 				FDADE24F281AC28100C133DD /* SubscriptionItemView.swift in Sources */,
