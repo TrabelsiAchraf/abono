@@ -16,9 +16,9 @@ struct AmountCardView: View {
     var body: some View {
         VStack(spacing: 2) {
             Text(title)
-                .font(.system(size: 18))
+                .font(.large)
             Text(amount)
-                .font(.system(size: 26)).bold()
+                .font(.xlarge).bold()
         }
         .foregroundColor(isEnabled ? .black : .gray)
     }

@@ -15,12 +15,12 @@ struct SubscriptionItemView: View {
             Image(icon)
                 .resizable()
                 .scaledToFit()
-                .frame(width: 50, height: 50)
+                .frame(width: 35, height: 35)
                 .cornerRadius(10)
             
             VStack(alignment: .leading) {
                 Text(name)
-                    .font(.system(size: 16)).bold()
+                    .font(.medium2).bold()
                 Text("30 September 2019")
                     .font(.caption)
                     .foregroundColor(Color.second)
@@ -30,7 +30,7 @@ struct SubscriptionItemView: View {
             Spacer()
             
             Text("$5,99 / mo")
-                .font(.system(size: 18)).bold()
+                .font(.medium2).bold()
         }
         .padding()
         .overlay(

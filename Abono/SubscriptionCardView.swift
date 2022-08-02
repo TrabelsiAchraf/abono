@@ -19,16 +19,16 @@ struct SubscriptionCardView: View {
                 Image(icon)
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 50, height: 50)
+                    .frame(width: 35, height: 35)
                     .cornerRadius(10)
                 Text(amount)
-                    .font(.system(size: 18)).bold()
+                    .font(.medium2).bold()
             }
             
             HStack {
                 VStack(alignment: .leading) {
                     Text(name)
-                        .font(.system(size: 16)).bold()
+                        .font(.medium2).bold()
                     Text("Entertainment")
                         .font(.caption)
                         .foregroundColor(Color.second)
@@ -41,7 +41,7 @@ struct SubscriptionCardView: View {
                                    color: daysLeft.progressColor,
                                    text: daysLeft.text)
                 Text("days left")
-                    .font(.system(size: 12)).bold()
+                    .font(.small).bold()
                 Spacer()
             }
         }

@@ -12,13 +12,13 @@ struct AlreadyPaidView: View {
         VStack {
             HStack {
                 Text("Already paid")
-                    .font(.system(size: 16)).bold()
+                    .font(.medium2).bold()
                 Spacer()
                 NavigationLink {
                     AllSubscriptionsView()
                 } label: {
                     Text("See All")
-                        .font(.system(size: 14)).bold()
+                        .font(.medium1).bold()
                 }
             }
             
@@ -26,7 +26,7 @@ struct AlreadyPaidView: View {
                 HStack {
                     VStack(alignment: .leading) {
                         Text("20€ / 120€")
-                            .font(.title2).bold()
+                            .font(.large).bold()
                         Text("Current value")
                             .font(.caption)
                             .foregroundColor(Color.second)

@@ -27,7 +27,7 @@ struct ProgressCircleView: View {
                 .rotationEffect(Angle(degrees: 270.0))
             
             Text(text)
-                .font(.system(size: 16))
+                .font(.medium2)
                 .bold()
         }
         .frame(width: 35, height: 35)

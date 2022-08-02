@@ -27,13 +27,13 @@ struct UpcomingSubscriptionsView: View {
         VStack {
             HStack {
                 Text("Upcoming")
-                    .font(.system(size: 16)).bold()
+                    .font(.medium2).bold()
                 Spacer()
                 NavigationLink {
                     AllSubscriptionsView()
                 } label: {
                     Text("See All")
-                        .font(.system(size: 14)).bold()
+                        .font(.medium1).bold()
                 }
             }
             ScrollView(.horizontal, showsIndicators: false) {
