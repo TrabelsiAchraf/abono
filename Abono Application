@@ -1,9 +1,71 @@
-<mxfile host="app.diagrams.net" modified="2022-08-03T17:21:00.942Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="sTFs9ERo4AoOvLvcT4d-" version="18.1.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-03T17:42:03.363Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="Np6qfhtS93UqqINRoT_v" version="18.1.3" type="github">
   <diagram id="0s6CCL-AMppFx7nKB-YY" name="Page-1">
     <mxGraphModel dx="1234" dy="825" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#000000" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="bSpihZmtzEMPrU_MOnLG-2" value="&lt;font style=&quot;font-size: 16px;&quot; color=&quot;#ffffff&quot;&gt;Subscription 1&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#CCFFE6;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="316" y="238" width="156" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="bSpihZmtzEMPrU_MOnLG-4" value="&lt;font style=&quot;font-size: 16px;&quot; color=&quot;#ffffff&quot;&gt;Subscription 2&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#CCFFE6;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="493" y="238" width="156" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="bSpihZmtzEMPrU_MOnLG-5" value="&lt;font style=&quot;font-size: 16px;&quot; color=&quot;#ffffff&quot;&gt;Subscription 3&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#CCFFE6;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="670" y="238" width="156" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="bSpihZmtzEMPrU_MOnLG-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;fontColor=#FFFFFF;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="556" y="95" as="sourcePoint" />
+            <mxPoint x="413" y="264" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bSpihZmtzEMPrU_MOnLG-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;fontSize=16;fontColor=#FFFFFF;" edge="1" parent="1" target="bSpihZmtzEMPrU_MOnLG-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="571" y="95" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bSpihZmtzEMPrU_MOnLG-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;fontColor=#FFFFFF;strokeColor=#CCFFFF;exitX=0;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=2;" edge="1" parent="1" source="bSpihZmtzEMPrU_MOnLG-15" target="bSpihZmtzEMPrU_MOnLG-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="556" y="95" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bSpihZmtzEMPrU_MOnLG-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;fontColor=#FFFFFF;strokeColor=#CCFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=2;" edge="1" parent="1" source="bSpihZmtzEMPrU_MOnLG-15" target="bSpihZmtzEMPrU_MOnLG-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="586" y="95" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bSpihZmtzEMPrU_MOnLG-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;fontColor=#FFFFFF;strokeColor=#CCFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;" edge="1" parent="1" source="bSpihZmtzEMPrU_MOnLG-15" target="bSpihZmtzEMPrU_MOnLG-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="571" y="125" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bSpihZmtzEMPrU_MOnLG-15" value="&lt;font style=&quot;font-size: 16px;&quot; color=&quot;#ffffff&quot;&gt;User&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#CCFFE6;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="493" y="23" width="156" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="bSpihZmtzEMPrU_MOnLG-22" value="Subscription" style="swimlane;fontSize=16;fontColor=#FFFFFF;strokeColor=#CCFFE6;strokeWidth=2;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="459" y="431" width="206" height="228" as="geometry" />
+        </mxCell>
+        <mxCell id="bSpihZmtzEMPrU_MOnLG-23" value="Name: String" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontColor=#FFFFFF;" vertex="1" parent="bSpihZmtzEMPrU_MOnLG-22">
+          <mxGeometry x="3" y="28" width="103" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="bSpihZmtzEMPrU_MOnLG-25" value="Amount: Float" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontColor=#FFFFFF;" vertex="1" parent="bSpihZmtzEMPrU_MOnLG-22">
+          <mxGeometry x="3" y="57" width="110" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="bSpihZmtzEMPrU_MOnLG-26" value="Category: Enum" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontColor=#FFFFFF;" vertex="1" parent="bSpihZmtzEMPrU_MOnLG-22">
+          <mxGeometry x="3" y="86" width="126" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="bSpihZmtzEMPrU_MOnLG-32" value="Date: Date" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontColor=#FFFFFF;" vertex="1" parent="bSpihZmtzEMPrU_MOnLG-22">
+          <mxGeometry x="4" y="116" width="86" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="bSpihZmtzEMPrU_MOnLG-33" value="Billing Cycle: Enum" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontColor=#FFFFFF;" vertex="1" parent="bSpihZmtzEMPrU_MOnLG-22">
+          <mxGeometry x="4" y="143" width="148" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="bSpihZmtzEMPrU_MOnLG-34" value="IsNotificationON: Bool" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontColor=#FFFFFF;" vertex="1" parent="bSpihZmtzEMPrU_MOnLG-22">
+          <mxGeometry x="4" y="171" width="167" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="bSpihZmtzEMPrU_MOnLG-36" value="RemindMe: Enum" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontColor=#FFFFFF;" vertex="1" parent="bSpihZmtzEMPrU_MOnLG-22">
+          <mxGeometry x="4" y="198" width="138" height="23" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
