@@ -10,20 +10,31 @@ import SwiftUI
 struct HeaderView: View {
     var body: some View {
         HStack {
-            Spacer()
             Button {
                 
             } label: {
                 Image("avatar")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 40, height: 40)
+                    .frame(width: 35, height: 35)
                     .clipShape(Circle())
                     .overlay(
                         Circle()
                             .stroke(lineWidth: 2.0)
                             .foregroundColor(.progressView)
                     )
+            }
+            
+            Spacer()
+            
+            Button {
+                
+            } label: {
+                Image(systemName: "plus.circle.fill")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 35, height: 35)
+                    .clipShape(Circle())
             }
         }
     }

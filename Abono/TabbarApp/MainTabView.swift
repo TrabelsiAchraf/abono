@@ -23,8 +23,6 @@ struct MainTabView: View {
         switch type {
         case .home:
             ContentView()
-        case .add:
-            StatsView()
         case .stats:
             StatsView()
         case .settings:
@@ -34,7 +32,6 @@ struct MainTabView: View {
     
     enum TabType: Int, CaseIterable {
         case home = 0
-        case add
         case stats
         case settings
         
@@ -42,8 +39,6 @@ struct MainTabView: View {
             switch self {
             case .home:
                 return TabItemData(image: "house.fill", title: "Home")
-            case .add:
-                return TabItemData(image: "plus.circle.fill", title: "Add")
             case .stats:
                 return TabItemData(image: "chart.line.uptrend.xyaxis.circle.fill", title: "STATS")
             case .settings:
