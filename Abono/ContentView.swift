@@ -22,9 +22,11 @@ struct ContentView: View {
                     )
                     .padding(.vertical, 20)
                     
-                    UpcomingSubscriptionsView()
-                        .padding(.horizontal, 20)
-                        .padding(.bottom, 10)
+                    UpcomingSubscriptionsView(subscriptionCardTapped: { subscription in
+                        showingAddSubscriptionSheet.toggle()
+                    })
+                    .padding(.horizontal, 20)
+                    .padding(.bottom, 10)
                     
                     AlreadyPaidView()
                         .padding(.horizontal, 20)

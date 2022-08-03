@@ -23,6 +23,8 @@ struct UpcomingSubscriptionsView: View {
                                 Subscription(name: "Amazon Prime", icon: "prime_ic", amount: "$5,99 / mo",
                                              daysLeft: (progressValue: 0.50, progressColor: .yellow, text: "15"))]
     
+    var subscriptionCardTapped: (Subscription) -> Void
+    
     var body: some View {
         VStack {
             HStack {
@@ -45,7 +47,9 @@ struct UpcomingSubscriptionsView: View {
                                              daysLeft: (progressValue: subscription.daysLeft.progressValue,
                                                         progressColor: subscription.daysLeft.progressColor,
                                                         text: subscription.daysLeft.text)
-                        )
+                        ).onTapGesture {
+                            subscriptionCardTapped(subscription)
+                        }
                     }
                 }
                 .background(Color.defaultBackground)
@@ -56,7 +60,7 @@ struct UpcomingSubscriptionsView: View {
 
 struct UpcomingSubscriptionsView_Previews: PreviewProvider {
     static var previews: some View {
-        UpcomingSubscriptionsView()
+        UpcomingSubscriptionsView(subscriptionCardTapped: { subs in })
             .previewLayout(.sizeThatFits)
             .padding()
     }
