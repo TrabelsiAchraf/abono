@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct HeaderView: View {
+    var addButtonTapped: () -> Void
+    var profilButtonTapped: () -> Void
     var body: some View {
         HStack {
             Button {
-                
+                profilButtonTapped()
             } label: {
                 Image("avatar")
                     .resizable()
@@ -28,7 +30,7 @@ struct HeaderView: View {
             Spacer()
             
             Button {
-                
+                addButtonTapped()
             } label: {
                 Image(systemName: "plus.circle.fill")
                     .resizable()
@@ -42,7 +44,7 @@ struct HeaderView: View {
 
 struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        HeaderView()
+        HeaderView(addButtonTapped: {}, profilButtonTapped: {})
             .previewLayout(.sizeThatFits)
             .padding()
     }

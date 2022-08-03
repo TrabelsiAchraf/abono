@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var showingAddSubscriptionSheet = false
+    
     var body: some View {
         NavigationView {
             ScrollView {
@@ -30,7 +33,16 @@ struct ContentView: View {
             .background(Color.defaultBackground)
             .toolbar {
                 ToolbarItem(placement: .principal) {
-                    HeaderView()
+                    HeaderView(
+                        addButtonTapped: {
+                            showingAddSubscriptionSheet.toggle()
+                        },
+                        profilButtonTapped: {
+                            
+                        })
+                    .sheet(isPresented: $showingAddSubscriptionSheet) {
+                        AddSubscriptionView()
+                    }
                 }
             }
             .navigationBarTitleDisplayMode(.inline)

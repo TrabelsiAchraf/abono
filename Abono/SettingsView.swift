@@ -9,19 +9,18 @@ import SwiftUI
 
 struct SettingsView: View {
     
-    let currencies = ["EUR", "AUD", "INR", "TRY"]
+    private let currencies = ["EUR", "AUD", "INR", "TRY"]
     @State private var selectedCurrency = "EUR"
     
-    let appearances = [Appearance.system, Appearance.dark, Appearance.light]
+    private let appearances = [Appearance.system, Appearance.dark, Appearance.light]
     @AppStorage("isDarkMode") private var selectedAppearance: Appearance = .system
     
     @State private var isNotificationOn: Bool = false
-    let reminds = ["The same day", "1 day before", "2 days before",
+    private let reminds = ["The same day", "1 day before", "2 days before",
                    "3 days before", "4 days before", "5 days before",
                    "6 days before", "7 days before", "8 days before", "9 days before"
     ]
     @State private var selectedRemind = "The same day"
-    
     
     var body: some View {
         NavigationView {
