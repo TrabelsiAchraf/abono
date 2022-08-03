@@ -32,6 +32,7 @@
 		FDAA53C528998AB50091AF84 /* TabBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAA53C428998AB50091AF84 /* TabBottomView.swift */; };
 		FDAA53C728998ACB0091AF84 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAA53C628998ACB0091AF84 /* CustomTabView.swift */; };
 		FDAA53C9289A92220091AF84 /* AddSubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAA53C8289A92220091AF84 /* AddSubscriptionView.swift */; };
+		FDAA53CB289A9E1A0091AF84 /* CurrencyGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAA53CA289A9E190091AF84 /* CurrencyGenerator.swift */; };
 		FDADE24F281AC28100C133DD /* SubscriptionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDADE24E281AC28100C133DD /* SubscriptionItemView.swift */; };
 		FDADE251281ADC2200C133DD /* PieSliceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDADE250281ADC2200C133DD /* PieSliceView.swift */; };
 		FDADE253281ADCDB00C133DD /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDADE252281ADCDB00C133DD /* PieChartView.swift */; };
@@ -86,6 +87,7 @@
 		FDAA53C428998AB50091AF84 /* TabBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBottomView.swift; sourceTree = "<group>"; };
 		FDAA53C628998ACB0091AF84 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		FDAA53C8289A92220091AF84 /* AddSubscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubscriptionView.swift; sourceTree = "<group>"; };
+		FDAA53CA289A9E190091AF84 /* CurrencyGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyGenerator.swift; sourceTree = "<group>"; };
 		FDADE24E281AC28100C133DD /* SubscriptionItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionItemView.swift; sourceTree = "<group>"; };
 		FDADE250281ADC2200C133DD /* PieSliceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieSliceView.swift; sourceTree = "<group>"; };
 		FDADE252281ADCDB00C133DD /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				FDC6F5122889AC38007A37FD /* SocialMediaManager.swift */,
 				FDC6F5142889B1AA007A37FD /* ContactUsView.swift */,
 				FDAA53C8289A92220091AF84 /* AddSubscriptionView.swift */,
+				FDAA53CA289A9E190091AF84 /* CurrencyGenerator.swift */,
 				FDC6F50E288873F0007A37FD /* Colors.swift */,
 				FDAA53B928996EC70091AF84 /* Fonts.swift */,
 				FD4379B52818A65F0036AE8B /* Assets.xcassets */,
@@ -341,6 +344,7 @@
 			files = (
 				FDADE253281ADCDB00C133DD /* PieChartView.swift in Sources */,
 				FD4379DE2818AB450036AE8B /* TopAmountSectionView.swift in Sources */,
+				FDAA53CB289A9E1A0091AF84 /* CurrencyGenerator.swift in Sources */,
 				FD2E6CE2286F3E6E00800D85 /* AlreadyPaidView.swift in Sources */,
 				FD4379FB281A981C0036AE8B /* UpcomingSubscriptionsView.swift in Sources */,
 				FDAA53C728998ACB0091AF84 /* CustomTabView.swift in Sources */,
