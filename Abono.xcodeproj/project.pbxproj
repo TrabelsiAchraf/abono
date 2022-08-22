@@ -7,16 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FD3B88DC28A34AD8001B0B0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD4379B52818A65F0036AE8B /* Assets.xcassets */; };
-		FD412E9028A348B70061FA23 /* Empty_Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD412E8F28A348B70061FA23 /* Empty_Entities.swift */; };
-		FD412E9228A348C10061FA23 /* Empty_UseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD412E9128A348C10061FA23 /* Empty_UseCases.swift */; };
-		FD412E9428A348CA0061FA23 /* Empty_Interfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD412E9328A348CA0061FA23 /* Empty_Interfaces.swift */; };
-		FD412E9628A348FC0061FA23 /* Empty_Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD412E9528A348FC0061FA23 /* Empty_Data.swift */; };
-		FD412E9828A349020061FA23 /* Empty_Infrastructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD412E9728A349020061FA23 /* Empty_Infrastructure.swift */; };
-		FD412E9A28A349080061FA23 /* Empty_Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD412E9928A349080061FA23 /* Empty_Common.swift */; };
 		FD4379B22818A65E0036AE8B /* AbonoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4379B12818A65E0036AE8B /* AbonoApp.swift */; };
 		FD4379B42818A65E0036AE8B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4379B32818A65E0036AE8B /* ContentView.swift */; };
+		FD4379B62818A65F0036AE8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD4379B52818A65F0036AE8B /* Assets.xcassets */; };
 		FD4379B92818A65F0036AE8B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD4379B82818A65F0036AE8B /* Preview Assets.xcassets */; };
+		FD4379C32818A6600036AE8B /* AbonoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4379C22818A6600036AE8B /* AbonoTests.swift */; };
+		FD4379CD2818A6600036AE8B /* AbonoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4379CC2818A6600036AE8B /* AbonoUITests.swift */; };
+		FD4379CF2818A6600036AE8B /* AbonoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4379CE2818A6600036AE8B /* AbonoUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,19 +34,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FD412E8F28A348B70061FA23 /* Empty_Entities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty_Entities.swift; sourceTree = "<group>"; };
-		FD412E9128A348C10061FA23 /* Empty_UseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty_UseCases.swift; sourceTree = "<group>"; };
-		FD412E9328A348CA0061FA23 /* Empty_Interfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty_Interfaces.swift; sourceTree = "<group>"; };
-		FD412E9528A348FC0061FA23 /* Empty_Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty_Data.swift; sourceTree = "<group>"; };
-		FD412E9728A349020061FA23 /* Empty_Infrastructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty_Infrastructure.swift; sourceTree = "<group>"; };
-		FD412E9928A349080061FA23 /* Empty_Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty_Common.swift; sourceTree = "<group>"; };
 		FD4379AE2818A65E0036AE8B /* Abono.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Abono.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD4379B12818A65E0036AE8B /* AbonoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbonoApp.swift; sourceTree = "<group>"; };
 		FD4379B32818A65E0036AE8B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FD4379B52818A65F0036AE8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD4379B82818A65F0036AE8B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FD4379BE2818A65F0036AE8B /* AbonoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbonoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD4379C22818A6600036AE8B /* AbonoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbonoTests.swift; sourceTree = "<group>"; };
 		FD4379C82818A6600036AE8B /* AbonoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbonoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD4379CC2818A6600036AE8B /* AbonoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbonoUITests.swift; sourceTree = "<group>"; };
+		FD4379CE2818A6600036AE8B /* AbonoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbonoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,108 +71,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FD412E8328A345560061FA23 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				FD4379B52818A65F0036AE8B /* Assets.xcassets */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		FD412E8428A345FB0061FA23 /* Application */ = {
-			isa = PBXGroup;
-			children = (
-				FD4379B12818A65E0036AE8B /* AbonoApp.swift */,
-			);
-			path = Application;
-			sourceTree = "<group>";
-		};
-		FD412E8528A346A30061FA23 /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				FD412E8928A3476E0061FA23 /* Entities */,
-				FD412E8A28A347810061FA23 /* UseCases */,
-				FD412E8B28A347970061FA23 /* Interfaces */,
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
-		FD412E8628A346AF0061FA23 /* Presentation */ = {
-			isa = PBXGroup;
-			children = (
-				FD4379B32818A65E0036AE8B /* ContentView.swift */,
-			);
-			path = Presentation;
-			sourceTree = "<group>";
-		};
-		FD412E8728A346BA0061FA23 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				FD412E9528A348FC0061FA23 /* Empty_Data.swift */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		FD412E8828A346C10061FA23 /* Infrastructure */ = {
-			isa = PBXGroup;
-			children = (
-				FD412E8D28A347DA0061FA23 /* Network */,
-			);
-			path = Infrastructure;
-			sourceTree = "<group>";
-		};
-		FD412E8928A3476E0061FA23 /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-				FD412E8F28A348B70061FA23 /* Empty_Entities.swift */,
-			);
-			path = Entities;
-			sourceTree = "<group>";
-		};
-		FD412E8A28A347810061FA23 /* UseCases */ = {
-			isa = PBXGroup;
-			children = (
-				FD412E9128A348C10061FA23 /* Empty_UseCases.swift */,
-			);
-			path = UseCases;
-			sourceTree = "<group>";
-		};
-		FD412E8B28A347970061FA23 /* Interfaces */ = {
-			isa = PBXGroup;
-			children = (
-				FD412E8C28A347A80061FA23 /* Repositories */,
-			);
-			path = Interfaces;
-			sourceTree = "<group>";
-		};
-		FD412E8C28A347A80061FA23 /* Repositories */ = {
-			isa = PBXGroup;
-			children = (
-				FD412E9328A348CA0061FA23 /* Empty_Interfaces.swift */,
-			);
-			path = Repositories;
-			sourceTree = "<group>";
-		};
-		FD412E8D28A347DA0061FA23 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				FD412E9728A349020061FA23 /* Empty_Infrastructure.swift */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		FD412E8E28A348210061FA23 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				FD412E9928A349080061FA23 /* Empty_Common.swift */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
 		FD4379A52818A65E0036AE8B = {
 			isa = PBXGroup;
 			children = (
 				FD4379B02818A65E0036AE8B /* Abono */,
+				FD4379C12818A6600036AE8B /* AbonoTests */,
+				FD4379CB2818A6600036AE8B /* AbonoUITests */,
 				FD4379AF2818A65E0036AE8B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -196,13 +94,9 @@
 		FD4379B02818A65E0036AE8B /* Abono */ = {
 			isa = PBXGroup;
 			children = (
-				FD412E8428A345FB0061FA23 /* Application */,
-				FD412E8528A346A30061FA23 /* Domain */,
-				FD412E8628A346AF0061FA23 /* Presentation */,
-				FD412E8728A346BA0061FA23 /* Data */,
-				FD412E8828A346C10061FA23 /* Infrastructure */,
-				FD412E8E28A348210061FA23 /* Common */,
-				FD412E8328A345560061FA23 /* Resources */,
+				FD4379B12818A65E0036AE8B /* AbonoApp.swift */,
+				FD4379B32818A65E0036AE8B /* ContentView.swift */,
+				FD4379B52818A65F0036AE8B /* Assets.xcassets */,
 				FD4379B72818A65F0036AE8B /* Preview Content */,
 			);
 			path = Abono;
@@ -214,6 +108,23 @@
 				FD4379B82818A65F0036AE8B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FD4379C12818A6600036AE8B /* AbonoTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD4379C22818A6600036AE8B /* AbonoTests.swift */,
+			);
+			path = AbonoTests;
+			sourceTree = "<group>";
+		};
+		FD4379CB2818A6600036AE8B /* AbonoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD4379CC2818A6600036AE8B /* AbonoUITests.swift */,
+				FD4379CE2818A6600036AE8B /* AbonoUITestsLaunchTests.swift */,
+			);
+			path = AbonoUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,8 +231,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD3B88DC28A34AD8001B0B0D /* Assets.xcassets in Resources */,
 				FD4379B92818A65F0036AE8B /* Preview Assets.xcassets in Resources */,
+				FD4379B62818A65F0036AE8B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,13 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD4379B42818A65E0036AE8B /* ContentView.swift in Sources */,
-				FD412E9228A348C10061FA23 /* Empty_UseCases.swift in Sources */,
-				FD412E9428A348CA0061FA23 /* Empty_Interfaces.swift in Sources */,
 				FD4379B22818A65E0036AE8B /* AbonoApp.swift in Sources */,
-				FD412E9028A348B70061FA23 /* Empty_Entities.swift in Sources */,
-				FD412E9A28A349080061FA23 /* Empty_Common.swift in Sources */,
-				FD412E9828A349020061FA23 /* Empty_Infrastructure.swift in Sources */,
-				FD412E9628A348FC0061FA23 /* Empty_Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD4379C32818A6600036AE8B /* AbonoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +274,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD4379CF2818A6600036AE8B /* AbonoUITestsLaunchTests.swift in Sources */,
+				FD4379CD2818A6600036AE8B /* AbonoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,7 +428,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.1;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tadev.Abono;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -548,7 +456,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.1;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tadev.Abono;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
