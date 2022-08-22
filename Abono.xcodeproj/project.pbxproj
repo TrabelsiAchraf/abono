@@ -28,6 +28,7 @@
 		FDFB779A28B3AE5000E1C685 /* ProgressCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFB779928B3AE5000E1C685 /* ProgressCircleView.swift */; };
 		FDFB779C28B3AE6A00E1C685 /* AlreadyPaidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFB779B28B3AE6A00E1C685 /* AlreadyPaidView.swift */; };
 		FDFB779E28B3AE8600E1C685 /* SubscriptionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFB779D28B3AE8600E1C685 /* SubscriptionItemView.swift */; };
+		FDFB77A728B3CA7700E1C685 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = FDFB77A628B3CA7700E1C685 /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDFB77A728B3CA7700E1C685 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +267,9 @@
 			dependencies = (
 			);
 			name = Abono;
+			packageProductDependencies = (
+				FDFB77A628B3CA7700E1C685 /* ComposableArchitecture */,
+			);
 			productName = Abono;
 			productReference = FD4379AE2818A65E0036AE8B /* Abono.app */;
 			productType = "com.apple.product-type.application";
@@ -337,6 +342,9 @@
 				Base,
 			);
 			mainGroup = FD4379A52818A65E0036AE8B;
+			packageReferences = (
+				FDFB77A528B3CA7700E1C685 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = FD4379AF2818A65E0036AE8B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -713,6 +721,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FDFB77A528B3CA7700E1C685 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FDFB77A628B3CA7700E1C685 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDFB77A528B3CA7700E1C685 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FD4379A62818A65E0036AE8B /* Project object */;
 }
