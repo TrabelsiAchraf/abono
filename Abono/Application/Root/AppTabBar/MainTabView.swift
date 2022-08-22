@@ -22,7 +22,7 @@ struct MainTabView: View {
     func getTabView(type: TabType) -> some View {
         switch type {
         case .home:
-            ContentView()
+            EmptyView()
         case .stats:
             EmptyView()
 //            StatsView()

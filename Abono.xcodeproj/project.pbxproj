@@ -14,12 +14,8 @@
 		FD248DF028B39C0000960952 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD248DEF28B39C0000960952 /* CustomTabView.swift */; };
 		FD248DF228B39C6400960952 /* AppAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD248DF128B39C6400960952 /* AppAppearance.swift */; };
 		FD4379B22818A65E0036AE8B /* AbonoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4379B12818A65E0036AE8B /* AbonoApp.swift */; };
-		FD4379B42818A65E0036AE8B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4379B32818A65E0036AE8B /* ContentView.swift */; };
 		FD4379B62818A65F0036AE8B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD4379B52818A65F0036AE8B /* Images.xcassets */; };
 		FD4379B92818A65F0036AE8B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD4379B82818A65F0036AE8B /* Preview Assets.xcassets */; };
-		FD4379C32818A6600036AE8B /* AbonoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4379C22818A6600036AE8B /* AbonoTests.swift */; };
-		FD4379CD2818A6600036AE8B /* AbonoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4379CC2818A6600036AE8B /* AbonoUITests.swift */; };
-		FD4379CF2818A6600036AE8B /* AbonoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4379CE2818A6600036AE8B /* AbonoUITestsLaunchTests.swift */; };
 		FDFB778728B39CF000E1C685 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFB778628B39CF000E1C685 /* Colors.swift */; };
 		FDFB778928B39D0600E1C685 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDFB778828B39D0600E1C685 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
@@ -50,14 +46,10 @@
 		FD248DF128B39C6400960952 /* AppAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAppearance.swift; sourceTree = "<group>"; };
 		FD4379AE2818A65E0036AE8B /* Abono.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Abono.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD4379B12818A65E0036AE8B /* AbonoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbonoApp.swift; sourceTree = "<group>"; };
-		FD4379B32818A65E0036AE8B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FD4379B52818A65F0036AE8B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FD4379B82818A65F0036AE8B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FD4379BE2818A65F0036AE8B /* AbonoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbonoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD4379C22818A6600036AE8B /* AbonoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbonoTests.swift; sourceTree = "<group>"; };
 		FD4379C82818A6600036AE8B /* AbonoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbonoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD4379CC2818A6600036AE8B /* AbonoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbonoUITests.swift; sourceTree = "<group>"; };
-		FD4379CE2818A6600036AE8B /* AbonoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbonoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FDFB778628B39CF000E1C685 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		FDFB778828B39D0600E1C685 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,7 +142,6 @@
 		FD4379B02818A65E0036AE8B /* Abono */ = {
 			isa = PBXGroup;
 			children = (
-				FD4379B32818A65E0036AE8B /* ContentView.swift */,
 				FD248DE428B39B0000960952 /* Application */,
 				FDFB778528B39CD600E1C685 /* Design System */,
 				FD248DE328B39A4700960952 /* Resources */,
@@ -169,7 +160,6 @@
 		FD4379C12818A6600036AE8B /* AbonoTests */ = {
 			isa = PBXGroup;
 			children = (
-				FD4379C22818A6600036AE8B /* AbonoTests.swift */,
 			);
 			path = AbonoTests;
 			sourceTree = "<group>";
@@ -177,8 +167,6 @@
 		FD4379CB2818A6600036AE8B /* AbonoUITests */ = {
 			isa = PBXGroup;
 			children = (
-				FD4379CC2818A6600036AE8B /* AbonoUITests.swift */,
-				FD4379CE2818A6600036AE8B /* AbonoUITestsLaunchTests.swift */,
 			);
 			path = AbonoUITests;
 			sourceTree = "<group>";
@@ -325,7 +313,6 @@
 				FD248DEA28B39BD600960952 /* TabItemData.swift in Sources */,
 				FDFB778728B39CF000E1C685 /* Colors.swift in Sources */,
 				FD248DEE28B39BF100960952 /* TabBottomView.swift in Sources */,
-				FD4379B42818A65E0036AE8B /* ContentView.swift in Sources */,
 				FD4379B22818A65E0036AE8B /* AbonoApp.swift in Sources */,
 				FD248DEC28B39BE400960952 /* TabItemView.swift in Sources */,
 				FD248DE828B39BC600960952 /* MainTabView.swift in Sources */,
@@ -338,7 +325,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD4379C32818A6600036AE8B /* AbonoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,8 +332,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD4379CF2818A6600036AE8B /* AbonoUITestsLaunchTests.swift in Sources */,
-				FD4379CD2818A6600036AE8B /* AbonoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
