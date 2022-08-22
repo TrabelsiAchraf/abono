@@ -46,6 +46,7 @@
 		FD4379C82818A6600036AE8B /* AbonoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbonoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD4379CC2818A6600036AE8B /* AbonoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbonoUITests.swift; sourceTree = "<group>"; };
 		FD4379CE2818A6600036AE8B /* AbonoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbonoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FDFB778628B39CF000E1C685 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		FDFB778828B39D0600E1C685 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +110,7 @@
 			children = (
 				FD4379B12818A65E0036AE8B /* AbonoApp.swift */,
 				FD4379B32818A65E0036AE8B /* ContentView.swift */,
+				FDFB778528B39CD600E1C685 /* Design System */,
 				FD248DE328B39A4700960952 /* Resources */,
 			);
 			path = Abono;
@@ -137,6 +139,14 @@
 				FD4379CE2818A6600036AE8B /* AbonoUITestsLaunchTests.swift */,
 			);
 			path = AbonoUITests;
+			sourceTree = "<group>";
+		};
+		FDFB778528B39CD600E1C685 /* Design System */ = {
+			isa = PBXGroup;
+			children = (
+				FDFB778628B39CF000E1C685 /* Colors.swift */,
+			);
+			path = "Design System";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDFB778728B39CF000E1C685 /* Colors.swift in Sources */,
 				FD4379B42818A65E0036AE8B /* ContentView.swift in Sources */,
 				FD4379B22818A65E0036AE8B /* AbonoApp.swift in Sources */,
 			);
