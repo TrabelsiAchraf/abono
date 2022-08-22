@@ -19,7 +19,7 @@ struct TabBottomView: View {
             ForEach(tabbarItems.indices, id: \.self) { index in
                 let item = tabbarItems[index]
                 Button {
-                    self.selectedIndex = index
+                    selectedIndex = index
                 } label: {
                     let isSelected = selectedIndex == index
                     TabItemView(data: item, isSelected: isSelected)

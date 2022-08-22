@@ -9,10 +9,11 @@ import SwiftUI
 
 struct MainTabView: View {
     
-    @State var selectedIndex: Int = 0
+    @State private var selectedIndex: Int = 0
     
     var body: some View {
-        CustomTabView(tabs: TabType.allCases.map({ $0.tabItem }), selectedIndex: $selectedIndex) { index in
+        CustomTabView(tabs: TabType.allCases.map { $0.tabItem },
+                      selectedIndex: $selectedIndex) { index in
             let type = TabType(rawValue: index) ?? .home
             getTabView(type: type)
         }
@@ -22,13 +23,11 @@ struct MainTabView: View {
     func getTabView(type: TabType) -> some View {
         switch type {
         case .home:
-            EmptyView()
+            DashboardView()
         case .stats:
             EmptyView()
-//            StatsView()
         case .settings:
             EmptyView()
-//            SettingsView()
         }
     }
     
@@ -40,11 +39,11 @@ struct MainTabView: View {
         var tabItem: TabItemData {
             switch self {
             case .home:
-                return TabItemData(image: "house.fill", title: "Home")
+                return TabItemData(image: "house.fill")
             case .stats:
-                return TabItemData(image: "chart.line.uptrend.xyaxis.circle.fill", title: "STATS")
+                return TabItemData(image: "chart.line.uptrend.xyaxis.circle.fill")
             case .settings:
-                return TabItemData(image: "gearshape.fill", title: "SETTINGS")
+                return TabItemData(image: "gearshape.fill")
             }
         }
     }

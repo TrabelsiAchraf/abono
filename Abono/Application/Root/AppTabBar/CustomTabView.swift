@@ -17,8 +17,7 @@ struct CustomTabView<Content: View>: View {
         ZStack {
             TabView(selection: $selectedIndex) {
                 ForEach(tabs.indices, id: \.self) { index in
-                    content(index)
-                        .tag(index)
+                    content(index).tag(index)
                 }
             }
             

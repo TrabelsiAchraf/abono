@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TabItemView: View {
+    
     let data: TabItemData
     let isSelected: Bool
     
@@ -18,7 +19,7 @@ struct TabItemView: View {
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 25, height: 25)
                 .padding()
-                .foregroundColor(isSelected ? Color.blue : Color.gray)
+                .foregroundColor(isSelected ? .blue : .gray)
         }
     }
 }

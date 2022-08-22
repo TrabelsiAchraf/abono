@@ -9,11 +9,13 @@ import SwiftUI
 
 @main
 struct AbonoApp: App {
+    
     @AppStorage("isDarkMode") private var appearance: Appearance = .system
+    
     var body: some Scene {
         WindowGroup {
             MainTabView()
-            .preferredColorScheme(appearance.value)
+                .preferredColorScheme(appearance.value)
         }
     }
 }

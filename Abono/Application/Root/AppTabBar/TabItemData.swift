@@ -7,5 +7,4 @@
 
 struct TabItemData {
     let image: String
-    let title: String
 }
