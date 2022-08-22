@@ -1,0 +1,53 @@
+//
+//  HeaderView.swift
+//  Abono
+//
+//  Created by Achraf Trabelsi on 22/08/2022.
+//
+
+import SwiftUI
+
+struct HeaderView: View {
+    
+    var addButtonTapped: () -> Void
+    var profilButtonTapped: () -> Void
+    
+    var body: some View {
+        HStack {
+            Button {
+                profilButtonTapped()
+            } label: {
+                Image("avatar")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 35, height: 35)
+                    .clipShape(Circle())
+                    .overlay(
+                        Circle()
+                            .stroke(lineWidth: 2.0)
+                            .foregroundColor(.progressView)
+                    )
+            }
+            
+            Spacer()
+            
+            Button {
+                addButtonTapped()
+            } label: {
+                Image(systemName: "plus.circle.fill")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 35, height: 35)
+                    .clipShape(Circle())
+            }
+        }
+    }
+}
+
+struct HeaderView_Previews: PreviewProvider {
+    static var previews: some View {
+        HeaderView(addButtonTapped: {}, profilButtonTapped: {})
+            .previewLayout(.sizeThatFits)
+            .padding()
+    }
+}

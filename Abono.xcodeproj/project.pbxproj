@@ -19,6 +19,15 @@
 		FDFB778728B39CF000E1C685 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFB778628B39CF000E1C685 /* Colors.swift */; };
 		FDFB778928B39D0600E1C685 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDFB778828B39D0600E1C685 /* Colors.xcassets */; };
 		FDFB778B28B3ACF600E1C685 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFB778A28B3ACF600E1C685 /* Fonts.swift */; };
+		FDFB778E28B3AD7B00E1C685 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFB778D28B3AD7B00E1C685 /* DashboardView.swift */; };
+		FDFB779028B3ADB800E1C685 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFB778F28B3ADB800E1C685 /* HeaderView.swift */; };
+		FDFB779228B3ADE400E1C685 /* TopAmountSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFB779128B3ADE400E1C685 /* TopAmountSectionView.swift */; };
+		FDFB779428B3AE0800E1C685 /* AmountCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFB779328B3AE0800E1C685 /* AmountCardView.swift */; };
+		FDFB779628B3AE2100E1C685 /* UpcomingSubscriptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFB779528B3AE2100E1C685 /* UpcomingSubscriptionsView.swift */; };
+		FDFB779828B3AE3500E1C685 /* SubscriptionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFB779728B3AE3500E1C685 /* SubscriptionCardView.swift */; };
+		FDFB779A28B3AE5000E1C685 /* ProgressCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFB779928B3AE5000E1C685 /* ProgressCircleView.swift */; };
+		FDFB779C28B3AE6A00E1C685 /* AlreadyPaidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFB779B28B3AE6A00E1C685 /* AlreadyPaidView.swift */; };
+		FDFB779E28B3AE8600E1C685 /* SubscriptionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFB779D28B3AE8600E1C685 /* SubscriptionItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +63,15 @@
 		FDFB778628B39CF000E1C685 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		FDFB778828B39D0600E1C685 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		FDFB778A28B3ACF600E1C685 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		FDFB778D28B3AD7B00E1C685 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		FDFB778F28B3ADB800E1C685 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		FDFB779128B3ADE400E1C685 /* TopAmountSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAmountSectionView.swift; sourceTree = "<group>"; };
+		FDFB779328B3AE0800E1C685 /* AmountCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountCardView.swift; sourceTree = "<group>"; };
+		FDFB779528B3AE2100E1C685 /* UpcomingSubscriptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingSubscriptionsView.swift; sourceTree = "<group>"; };
+		FDFB779728B3AE3500E1C685 /* SubscriptionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionCardView.swift; sourceTree = "<group>"; };
+		FDFB779928B3AE5000E1C685 /* ProgressCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleView.swift; sourceTree = "<group>"; };
+		FDFB779B28B3AE6A00E1C685 /* AlreadyPaidView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlreadyPaidView.swift; sourceTree = "<group>"; };
+		FDFB779D28B3AE8600E1C685 /* SubscriptionItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				FD248DE528B39B6C00960952 /* Root */,
+				FDFB778C28B3AD6C00E1C685 /* Dashboard */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -180,6 +199,54 @@
 				FDFB778A28B3ACF600E1C685 /* Fonts.swift */,
 			);
 			path = "Design System";
+			sourceTree = "<group>";
+		};
+		FDFB778C28B3AD6C00E1C685 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				FDFB778D28B3AD7B00E1C685 /* DashboardView.swift */,
+				FDFB778F28B3ADB800E1C685 /* HeaderView.swift */,
+				FDFB77A228B3B51C00E1C685 /* UpcomingSubscriptions */,
+				FDFB779F28B3B4A200E1C685 /* AmoutSection */,
+				FDFB77A128B3B4FB00E1C685 /* AlreadyPaid */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		FDFB779F28B3B4A200E1C685 /* AmoutSection */ = {
+			isa = PBXGroup;
+			children = (
+				FDFB779128B3ADE400E1C685 /* TopAmountSectionView.swift */,
+				FDFB779328B3AE0800E1C685 /* AmountCardView.swift */,
+			);
+			path = AmoutSection;
+			sourceTree = "<group>";
+		};
+		FDFB77A028B3B4E800E1C685 /* SubscriptionCard */ = {
+			isa = PBXGroup;
+			children = (
+				FDFB779728B3AE3500E1C685 /* SubscriptionCardView.swift */,
+				FDFB779928B3AE5000E1C685 /* ProgressCircleView.swift */,
+			);
+			path = SubscriptionCard;
+			sourceTree = "<group>";
+		};
+		FDFB77A128B3B4FB00E1C685 /* AlreadyPaid */ = {
+			isa = PBXGroup;
+			children = (
+				FDFB779B28B3AE6A00E1C685 /* AlreadyPaidView.swift */,
+				FDFB779D28B3AE8600E1C685 /* SubscriptionItemView.swift */,
+			);
+			path = AlreadyPaid;
+			sourceTree = "<group>";
+		};
+		FDFB77A228B3B51C00E1C685 /* UpcomingSubscriptions */ = {
+			isa = PBXGroup;
+			children = (
+				FDFB779528B3AE2100E1C685 /* UpcomingSubscriptionsView.swift */,
+				FDFB77A028B3B4E800E1C685 /* SubscriptionCard */,
+			);
+			path = UpcomingSubscriptions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,10 +383,19 @@
 				FD248DEA28B39BD600960952 /* TabItemData.swift in Sources */,
 				FDFB778728B39CF000E1C685 /* Colors.swift in Sources */,
 				FD248DEE28B39BF100960952 /* TabBottomView.swift in Sources */,
+				FDFB779628B3AE2100E1C685 /* UpcomingSubscriptionsView.swift in Sources */,
 				FD4379B22818A65E0036AE8B /* AbonoApp.swift in Sources */,
+				FDFB779A28B3AE5000E1C685 /* ProgressCircleView.swift in Sources */,
+				FDFB779228B3ADE400E1C685 /* TopAmountSectionView.swift in Sources */,
 				FD248DEC28B39BE400960952 /* TabItemView.swift in Sources */,
 				FD248DE828B39BC600960952 /* MainTabView.swift in Sources */,
 				FD248DF028B39C0000960952 /* CustomTabView.swift in Sources */,
+				FDFB779028B3ADB800E1C685 /* HeaderView.swift in Sources */,
+				FDFB779428B3AE0800E1C685 /* AmountCardView.swift in Sources */,
+				FDFB779E28B3AE8600E1C685 /* SubscriptionItemView.swift in Sources */,
+				FDFB778E28B3AD7B00E1C685 /* DashboardView.swift in Sources */,
+				FDFB779828B3AE3500E1C685 /* SubscriptionCardView.swift in Sources */,
+				FDFB779C28B3AE6A00E1C685 /* AlreadyPaidView.swift in Sources */,
 				FDFB778B28B3ACF600E1C685 /* Fonts.swift in Sources */,
 				FD248DF228B39C6400960952 /* AppAppearance.swift in Sources */,
 			);
