@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 struct DashboardView: View {
     
+    let store: Store<DashboardState, DashboardAction>
     @State private var showingAddSubscriptionSheet = false
     
     var body: some View {
@@ -22,14 +24,24 @@ struct DashboardView: View {
                     )
                     .padding(.vertical, 20)
                     
-                    UpcomingSubscriptionsView(subscriptionCardTapped: { subscription in
-                        showingAddSubscriptionSheet.toggle()
-                    })
+                    UpcomingSubscriptionsView(
+                        store: store.scope(
+                            state:\.upcomingSubsState,
+                            action: DashboardAction.upcomingSubscriptionAction
+                        ), subscriptionCardTapped: { subscription in
+                            showingAddSubscriptionSheet.toggle()
+                        }
+                    )
                     .padding(.horizontal, 20)
                     .padding(.bottom, 10)
                     
-                    AlreadyPaidView()
-                        .padding(.horizontal, 20)
+                    AlreadyPaidView(
+                        store: store.scope(
+                            state: \.alreadyPaidState,
+                            action: DashboardAction.alreadyPaidAction
+                        )
+                    )
+                    .padding(.horizontal, 20)
                 }
             }
             .background(Color.defaultBackground)
@@ -43,7 +55,7 @@ struct DashboardView: View {
                             
                         })
                     .sheet(isPresented: $showingAddSubscriptionSheet) {
-//                        AddSubscriptionView()
+                        AddSubscriptionView()
                     }
                 }
             }
@@ -55,9 +67,21 @@ struct DashboardView: View {
 struct DashboardView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            DashboardView()
-            DashboardView()
-                .preferredColorScheme(.dark)
+            DashboardView(
+                store: Store(
+                    initialState: DashboardState(),
+                    reducer: dashboardReducer,
+                    environment: .dev(environment: DashboardEnvironment())
+                )
+            )
+            DashboardView(
+                store: Store(
+                    initialState: DashboardState(),
+                    reducer: dashboardReducer,
+                    environment: .dev(environment: DashboardEnvironment())
+                )
+            )
+            .preferredColorScheme(.dark)
         }
     }
 }
