@@ -12,7 +12,11 @@ func dummyAlreadyPaidEffect(decoder: JSONDecoder) -> Effect<AlreadyPaidDataView,
         AlreadyPaidDataView.PaidSubscription(name: "Netflix", icon: "netflix_ic", paymentDate: "11 Janvier 2022", amount: "$12,99 / mo"),
         AlreadyPaidDataView.PaidSubscription(name: "Uber Eat", icon: "uber_eat_ic", paymentDate: "30 September 2022", amount: "$5,99 / mo")
     ]
-    let dummyAlreadyPaid = AlreadyPaidDataView(currentValue: "23€ / 120€", paidSubscriptions: subs)
+    let dummyAlreadyPaid = AlreadyPaidDataView(
+        alreadyPaidValue: "23€ / 120€",
+        progressValue: 0.2,
+        paidSubscriptions: subs
+    )
     return Effect(value: dummyAlreadyPaid)
 }
 

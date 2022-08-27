@@ -9,7 +9,8 @@ import Foundation
 
 struct AlreadyPaidDataView: Equatable, Identifiable {
     let id = UUID()
-    let currentValue: String
+    let alreadyPaidValue: String
+    var progressValue: Float
     let paidSubscriptions: [PaidSubscription]
     
     struct PaidSubscription: Equatable, Identifiable {

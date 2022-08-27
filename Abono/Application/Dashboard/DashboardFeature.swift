@@ -9,7 +9,7 @@ import ComposableArchitecture
 
 struct DashboardState {
     var upcomingSubsState = UpcomingSubscriptionsState()
-    var alreadyPaidState = AlreadyPaidState(alreadyPaid: AlreadyPaidDataView(currentValue: "", paidSubscriptions: []))
+    var alreadyPaidState = AlreadyPaidState(alreadyPaid: AlreadyPaidDataView(alreadyPaidValue: "", progressValue: 0.0, paidSubscriptions: []))
 }
 
 enum DashboardAction {
