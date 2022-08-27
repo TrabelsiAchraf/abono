@@ -34,11 +34,11 @@ struct AlreadyPaidView: View {
                                 .font(.medium2).bold()
                                 .foregroundColor(.white)
                             Spacer()
-                            Text(viewStore.alreadyPaid.currentValue)
+                            Text(viewStore.alreadyPaid.alreadyPaidValue)
                                 .font(.medium2).bold()
                                 .foregroundColor(.white)
                         }
-                        ProgressBar(value: .constant(0.2))
+                        ProgressBar(value: viewStore.alreadyPaid.progressValue)
                             .frame(height: 5)
                     }
                     .padding()
@@ -73,7 +73,8 @@ struct CurrentConsoView_Previews: PreviewProvider {
                 store: Store(
                     initialState: AlreadyPaidState(
                         alreadyPaid: AlreadyPaidDataView(
-                            currentValue: "",
+                            alreadyPaidValue: "",
+                            progressValue: 0.2,
                             paidSubscriptions: []
                         )
                     ),
@@ -91,7 +92,8 @@ struct CurrentConsoView_Previews: PreviewProvider {
                 store: Store(
                     initialState: AlreadyPaidState(
                         alreadyPaid: AlreadyPaidDataView(
-                            currentValue: "",
+                            alreadyPaidValue: "",
+                            progressValue: 0.2,
                             paidSubscriptions: []
                         )
                     ),
@@ -106,27 +108,6 @@ struct CurrentConsoView_Previews: PreviewProvider {
             .preferredColorScheme(.dark)
             .previewLayout(.fixed(width: 500.0, height: 350.0))
             .padding()
-        }
-    }
-}
-
-private struct ProgressBar: View {
-    
-    @Binding var value: Float
-    
-    var body: some View {
-        GeometryReader { geometry in
-            ZStack(alignment: .leading) {
-                Rectangle().frame(width: geometry.size.width, height: geometry.size.height)
-                    .opacity(0.3)
-                    .foregroundColor(Color(.systemTeal))
-                
-                Rectangle()
-                    .frame(width: min(CGFloat(value)*geometry.size.width, geometry.size.width),
-                           height: geometry.size.height)
-                    .foregroundColor(.progressView)
-            }
-            .cornerRadius(45.0)
         }
     }
 }
