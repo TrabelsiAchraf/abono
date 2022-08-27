@@ -13,4 +13,5 @@ extension Color {
     static let second: Color = Color("second")
     static let progressView: Color = Color("progressView")
     static let amountTitle: Color = Color("amountTitle")
+    static let currentPaidHeader: Color = Color("currentPaidHeader")
 }
