@@ -36,6 +36,7 @@
 		FD14A2D728B7A22D0025DE29 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FD14A2D628B7A22D0025DE29 /* FirebaseRemoteConfigSwift */; };
 		FD14A2D928B7A22D0025DE29 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FD14A2D828B7A22D0025DE29 /* FirebaseStorage */; };
 		FD14A2DB28B7A22D0025DE29 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = FD14A2DA28B7A22D0025DE29 /* FirebaseStorageCombine-Community */; };
+		FD14A2DE28B7A3590025DE29 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD14A2DD28B7A3590025DE29 /* GoogleService-Info.plist */; };
 		FD14A2E028B8B5760025DE29 /* AlreadyPaidFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14A2DF28B8B5760025DE29 /* AlreadyPaidFeature.swift */; };
 		FD14A2E228B8B6910025DE29 /* AlreadyPaidDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14A2E128B8B6910025DE29 /* AlreadyPaidDataView.swift */; };
 		FD14A2E428B8BBF50025DE29 /* AlreadyPaidModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14A2E328B8BBF50025DE29 /* AlreadyPaidModel.swift */; };
@@ -97,6 +98,7 @@
 /* Begin PBXFileReference section */
 		FD14A2A128B7944D0025DE29 /* RootFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootFeature.swift; sourceTree = "<group>"; };
 		FD14A2A328B795DE0025DE29 /* DashboardFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardFeature.swift; sourceTree = "<group>"; };
+		FD14A2DD28B7A3590025DE29 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FD14A2DF28B8B5760025DE29 /* AlreadyPaidFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlreadyPaidFeature.swift; sourceTree = "<group>"; };
 		FD14A2E128B8B6910025DE29 /* AlreadyPaidDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlreadyPaidDataView.swift; sourceTree = "<group>"; };
 		FD14A2E328B8BBF50025DE29 /* AlreadyPaidModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlreadyPaidModel.swift; sourceTree = "<group>"; };
@@ -306,6 +308,7 @@
 			children = (
 				FD248DE428B39B0000960952 /* Application */,
 				FDFB77A828B3CEA400E1C685 /* Shared */,
+				FD14A2DC28B7A3430025DE29 /* Configuration */,
 				FDFB778528B39CD600E1C685 /* Design System */,
 				FD248DE328B39A4700960952 /* Resources */,
 			);
@@ -768,6 +771,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Abono/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = QN66UQNDZR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -796,6 +800,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Abono/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = QN66UQNDZR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
