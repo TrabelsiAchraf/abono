@@ -20,7 +20,7 @@ struct AlreadyPaidView: View {
                         .font(.medium2).bold()
                     Spacer()
                     NavigationLink {
-                        //                    AllSubscriptionsView()
+                        //                        AllSubscriptionsView()
                     } label: {
                         Text("See All")
                             .font(.medium1).bold()
@@ -28,18 +28,18 @@ struct AlreadyPaidView: View {
                 }
                 
                 VStack {
-                    HStack {
-                        ProgressBar(value: .constant(0.2))
-                            .frame(height: 5)
-                            .padding(.horizontal, 20)
-                        VStack(alignment: .leading) {
-                            Text(viewStore.alreadyPaid.currentValue)
-                                .font(.large).bold()
-                                .foregroundColor(.white)
+                    VStack {
+                        HStack {
                             Text("December")
-                                .font(.caption).bold()
+                                .font(.medium2).bold()
+                                .foregroundColor(.white)
+                            Spacer()
+                            Text(viewStore.alreadyPaid.currentValue)
+                                .font(.medium2).bold()
                                 .foregroundColor(.white)
                         }
+                        ProgressBar(value: .constant(0.2))
+                            .frame(height: 5)
                     }
                     .padding()
                     .background(Color.currentPaidHeader)
@@ -130,4 +130,3 @@ private struct ProgressBar: View {
         }
     }
 }
-
