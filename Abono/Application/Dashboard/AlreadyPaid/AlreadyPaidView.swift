@@ -29,20 +29,20 @@ struct AlreadyPaidView: View {
                 
                 VStack {
                     HStack {
+                        ProgressBar(value: .constant(0.2))
+                            .frame(height: 5)
+                            .padding(.horizontal, 20)
                         VStack(alignment: .leading) {
                             Text(viewStore.alreadyPaid.currentValue)
                                 .font(.large).bold()
-                            Text("Current value")
-                                .font(.caption)
-                                .foregroundColor(Color.second)
+                                .foregroundColor(.white)
+                            Text("December")
+                                .font(.caption).bold()
+                                .foregroundColor(.white)
                         }
-                        Spacer()
                     }
-                    .padding([.leading, .top], 20)
-                    
-                    ProgressBar(value: .constant(0.2))
-                        .frame(height: 30)
-                        .padding(.horizontal, 20)
+                    .padding()
+                    .background(Color.currentPaidHeader)
                     
                     VStack(spacing: 10) {
                         ForEach(viewStore.alreadyPaid.paidSubscriptions, id: \.id) { subscription in
