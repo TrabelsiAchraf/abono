@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD14A2A228B7944D0025DE29 /* RootFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14A2A128B7944D0025DE29 /* RootFeature.swift */; };
 		FD14A2A728B7A22D0025DE29 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = FD14A2A628B7A22D0025DE29 /* FirebaseAnalytics */; };
 		FD14A2A928B7A22D0025DE29 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = FD14A2A828B7A22D0025DE29 /* FirebaseAnalyticsOnDeviceConversion */; };
 		FD14A2AB28B7A22D0025DE29 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FD14A2AA28B7A22D0025DE29 /* FirebaseAnalyticsSwift */; };
@@ -84,6 +85,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD14A2A128B7944D0025DE29 /* RootFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootFeature.swift; sourceTree = "<group>"; };
 		FD14A2DF28B8B5760025DE29 /* AlreadyPaidFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlreadyPaidFeature.swift; sourceTree = "<group>"; };
 		FD14A2E128B8B6910025DE29 /* AlreadyPaidDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlreadyPaidDataView.swift; sourceTree = "<group>"; };
 		FD14A2E328B8BBF50025DE29 /* AlreadyPaidModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlreadyPaidModel.swift; sourceTree = "<group>"; };
@@ -201,8 +203,9 @@
 		FD248DE528B39B6C00960952 /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				FD248DE628B39B7A00960952 /* AppTabBar */,
 				FD4379B12818A65E0036AE8B /* AbonoApp.swift */,
+				FD14A2A128B7944D0025DE29 /* RootFeature.swift */,
+				FD248DE628B39B7A00960952 /* AppTabBar */,
 				FD248DF128B39C6400960952 /* AppAppearance.swift */,
 			);
 			path = Root;
@@ -508,6 +511,7 @@
 				FD14A2E828B8C8A90025DE29 /* AlreadyPaidEffect.swift in Sources */,
 				FDFB77A428B3C8C700E1C685 /* UpcomingSubscriptionsFeature.swift in Sources */,
 				FD248DEA28B39BD600960952 /* TabItemData.swift in Sources */,
+				FD14A2A228B7944D0025DE29 /* RootFeature.swift in Sources */,
 				FDFB778728B39CF000E1C685 /* Colors.swift in Sources */,
 				FD248DEE28B39BF100960952 /* TabBottomView.swift in Sources */,
 				FDFB779628B3AE2100E1C685 /* UpcomingSubscriptionsView.swift in Sources */,

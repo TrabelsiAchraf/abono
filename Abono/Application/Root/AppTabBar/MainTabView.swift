@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 struct MainTabView: View {
     
     @State private var selectedIndex: Int = 0
+    let store: Store<RootState, RootAction>
     
     var body: some View {
         CustomTabView(tabs: TabType.allCases.map { $0.tabItem },
@@ -23,11 +25,15 @@ struct MainTabView: View {
     func getTabView(type: TabType) -> some View {
         switch type {
         case .home:
-            DashboardView()
+            DashboardView(
+                store: store.scope(
+                    state: \.dashboardState,
+                    action: RootAction.dashboardAction)
+            )
         case .stats:
-            EmptyView()
+            StatsView()
         case .settings:
-            EmptyView()
+            SettingsView()
         }
     }
     
@@ -51,9 +57,20 @@ struct MainTabView: View {
 
 struct MainTabView_Previews: PreviewProvider {
     static var previews: some View {
-        MainTabView()
-        MainTabView()
-            .preferredColorScheme(.dark)
+        MainTabView(
+            store: Store(
+                initialState: RootState(),
+                reducer: rootReducer,
+                environment: .dev(environment: RootEnvironment())
+            )
+        )
+        MainTabView(
+            store: Store(
+                initialState: RootState(),
+                reducer: rootReducer,
+                environment: .dev(environment: RootEnvironment())
+            )
+        )
+        .preferredColorScheme(.dark)
     }
 }
-
