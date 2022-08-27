@@ -6,18 +6,8 @@
 //
 
 import ComposableArchitecture
-import Firebase
 
-func dummyAlreadyPaidEffect(decoder: JSONDecoder) -> Effect<AlreadyPaidDataView, APIError> {
-
-//    let collection = Firestore.firestore().collection("Subscriptions")
-//    let subscription = Subscriptions(
-//        name: "Amazon Prime",
-//        amount: "4.99"
-//    )
-//    
-//    collection.addDocument(data: subscription.dictionary)
- 
+func dummyAlreadyPaidEffect(decoder: JSONDecoder) -> Effect<AlreadyPaidDataView, APIError> { 
     let subs: [AlreadyPaidDataView.PaidSubscription] = [
         AlreadyPaidDataView.PaidSubscription(name: "Netflix", icon: "netflix_ic", paymentDate: "11 Janvier 2022", amount: "$12,99 / mo"),
         AlreadyPaidDataView.PaidSubscription(name: "Uber Eat", icon: "uber_eat_ic", paymentDate: "30 September 2022", amount: "$5,99 / mo")
