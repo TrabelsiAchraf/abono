@@ -46,6 +46,7 @@
 		FD248DEE28B39BF100960952 /* TabBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD248DED28B39BF100960952 /* TabBottomView.swift */; };
 		FD248DF028B39C0000960952 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD248DEF28B39C0000960952 /* CustomTabView.swift */; };
 		FD248DF228B39C6400960952 /* AppAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD248DF128B39C6400960952 /* AppAppearance.swift */; };
+		FD3E066728BABFDB00B85360 /* AddSubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3E066628BABFDB00B85360 /* AddSubscriptionView.swift */; };
 		FD3E066E28BAC0D800B85360 /* SocialMediaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3E066D28BAC0D800B85360 /* SocialMediaManager.swift */; };
 		FD4379B22818A65E0036AE8B /* AbonoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4379B12818A65E0036AE8B /* AbonoApp.swift */; };
 		FD4379B62818A65F0036AE8B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD4379B52818A65F0036AE8B /* Images.xcassets */; };
@@ -100,6 +101,7 @@
 		FD248DED28B39BF100960952 /* TabBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBottomView.swift; sourceTree = "<group>"; };
 		FD248DEF28B39C0000960952 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		FD248DF128B39C6400960952 /* AppAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAppearance.swift; sourceTree = "<group>"; };
+		FD3E066628BABFDB00B85360 /* AddSubscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubscriptionView.swift; sourceTree = "<group>"; };
 		FD3E066D28BAC0D800B85360 /* SocialMediaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaManager.swift; sourceTree = "<group>"; };
 		FD4379AE2818A65E0036AE8B /* Abono.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Abono.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD4379B12818A65E0036AE8B /* AbonoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbonoApp.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 			children = (
 				FD248DE528B39B6C00960952 /* Root */,
 				FDFB778C28B3AD6C00E1C685 /* Dashboard */,
+				FD3E066528BABFC300B85360 /* AddSubscription */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -227,6 +230,14 @@
 				FD248DEF28B39C0000960952 /* CustomTabView.swift */,
 			);
 			path = AppTabBar;
+			sourceTree = "<group>";
+		};
+		FD3E066528BABFC300B85360 /* AddSubscription */ = {
+			isa = PBXGroup;
+			children = (
+				FD3E066628BABFDB00B85360 /* AddSubscriptionView.swift */,
+			);
+			path = AddSubscription;
 			sourceTree = "<group>";
 		};
 		FD4379A52818A65E0036AE8B = {
@@ -544,6 +555,7 @@
 				FDFB779028B3ADB800E1C685 /* HeaderView.swift in Sources */,
 				FDFB779428B3AE0800E1C685 /* AmountCardView.swift in Sources */,
 				FDFB779E28B3AE8600E1C685 /* SubscriptionItemView.swift in Sources */,
+				FD3E066728BABFDB00B85360 /* AddSubscriptionView.swift in Sources */,
 				FDFB778E28B3AD7B00E1C685 /* DashboardView.swift in Sources */,
 				FDFB779828B3AE3500E1C685 /* SubscriptionCardView.swift in Sources */,
 				FD14A2E028B8B5760025DE29 /* AlreadyPaidFeature.swift in Sources */,
