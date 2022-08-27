@@ -12,6 +12,7 @@ struct SubscriptionCardView: View {
     let name: String
     let icon: String
     let amount: String
+    let category: String
     let daysLeft: (progressValue: Float, progressColor: Color, text: String)
     
     var body: some View {
@@ -30,7 +31,7 @@ struct SubscriptionCardView: View {
                 VStack(alignment: .leading) {
                     Text(name)
                         .font(.medium2).bold()
-                    Text("Entertainment")
+                    Text(category)
                         .font(.caption)
                         .foregroundColor(Color.second)
                 }
@@ -58,12 +59,14 @@ struct SubscriptionCardView_Previews: PreviewProvider {
             SubscriptionCardView(name: "Netflix",
                                  icon: "netflix_ic",
                                  amount: "$5,99 / mo",
+                                 category: "Entertainment",
                                  daysLeft: (progressValue: 0.85, progressColor: .blue, text: "28"))
                 .previewLayout(.sizeThatFits)
             .padding()
             SubscriptionCardView(name: "Netflix",
                                  icon: "netflix_ic",
                                  amount: "$5,99 / mo",
+                                 category: "Entertainment",
                                  daysLeft: (progressValue: 0.85, progressColor: .blue, text: "28"))
             .preferredColorScheme(.dark)
             .previewLayout(.sizeThatFits)

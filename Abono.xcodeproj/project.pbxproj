@@ -34,6 +34,7 @@
 		FD14A2D728B7A22D0025DE29 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FD14A2D628B7A22D0025DE29 /* FirebaseRemoteConfigSwift */; };
 		FD14A2D928B7A22D0025DE29 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FD14A2D828B7A22D0025DE29 /* FirebaseStorage */; };
 		FD14A2DB28B7A22D0025DE29 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = FD14A2DA28B7A22D0025DE29 /* FirebaseStorageCombine-Community */; };
+		FD14A2E628B8C45C0025DE29 /* UpcomingSubscriptionDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14A2E528B8C45C0025DE29 /* UpcomingSubscriptionDataView.swift */; };
 		FD248DE828B39BC600960952 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD248DE728B39BC600960952 /* MainTabView.swift */; };
 		FD248DEA28B39BD600960952 /* TabItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD248DE928B39BD600960952 /* TabItemData.swift */; };
 		FD248DEC28B39BE400960952 /* TabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD248DEB28B39BE400960952 /* TabItemView.swift */; };
@@ -43,6 +44,8 @@
 		FD4379B22818A65E0036AE8B /* AbonoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4379B12818A65E0036AE8B /* AbonoApp.swift */; };
 		FD4379B62818A65F0036AE8B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD4379B52818A65F0036AE8B /* Images.xcassets */; };
 		FD4379B92818A65F0036AE8B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD4379B82818A65F0036AE8B /* Preview Assets.xcassets */; };
+		FD97193828B3CFD5008F6AFC /* UpcomingSubscriptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD97193728B3CFD5008F6AFC /* UpcomingSubscriptionModel.swift */; };
+		FD97193A28B3D453008F6AFC /* UpcomingSubscriptionEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD97193928B3D453008F6AFC /* UpcomingSubscriptionEffect.swift */; };
 		FDFB778728B39CF000E1C685 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFB778628B39CF000E1C685 /* Colors.swift */; };
 		FDFB778928B39D0600E1C685 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDFB778828B39D0600E1C685 /* Colors.xcassets */; };
 		FDFB778B28B3ACF600E1C685 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFB778A28B3ACF600E1C685 /* Fonts.swift */; };
@@ -55,6 +58,7 @@
 		FDFB779A28B3AE5000E1C685 /* ProgressCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFB779928B3AE5000E1C685 /* ProgressCircleView.swift */; };
 		FDFB779C28B3AE6A00E1C685 /* AlreadyPaidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFB779B28B3AE6A00E1C685 /* AlreadyPaidView.swift */; };
 		FDFB779E28B3AE8600E1C685 /* SubscriptionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFB779D28B3AE8600E1C685 /* SubscriptionItemView.swift */; };
+		FDFB77A428B3C8C700E1C685 /* UpcomingSubscriptionsFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFB77A328B3C8C700E1C685 /* UpcomingSubscriptionsFeature.swift */; };
 		FDFB77A728B3CA7700E1C685 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = FDFB77A628B3CA7700E1C685 /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +80,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD14A2E528B8C45C0025DE29 /* UpcomingSubscriptionDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingSubscriptionDataView.swift; sourceTree = "<group>"; };
 		FD248DE728B39BC600960952 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		FD248DE928B39BD600960952 /* TabItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemData.swift; sourceTree = "<group>"; };
 		FD248DEB28B39BE400960952 /* TabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemView.swift; sourceTree = "<group>"; };
@@ -88,6 +93,8 @@
 		FD4379B82818A65F0036AE8B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FD4379BE2818A65F0036AE8B /* AbonoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbonoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD4379C82818A6600036AE8B /* AbonoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbonoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD97193728B3CFD5008F6AFC /* UpcomingSubscriptionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingSubscriptionModel.swift; sourceTree = "<group>"; };
+		FD97193928B3D453008F6AFC /* UpcomingSubscriptionEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingSubscriptionEffect.swift; sourceTree = "<group>"; };
 		FDFB778628B39CF000E1C685 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		FDFB778828B39D0600E1C685 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		FDFB778A28B3ACF600E1C685 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
@@ -100,6 +107,7 @@
 		FDFB779928B3AE5000E1C685 /* ProgressCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleView.swift; sourceTree = "<group>"; };
 		FDFB779B28B3AE6A00E1C685 /* AlreadyPaidView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlreadyPaidView.swift; sourceTree = "<group>"; };
 		FDFB779D28B3AE8600E1C685 /* SubscriptionItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionItemView.swift; sourceTree = "<group>"; };
+		FDFB77A328B3C8C700E1C685 /* UpcomingSubscriptionsFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingSubscriptionsFeature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -307,7 +315,11 @@
 		FDFB77A228B3B51C00E1C685 /* UpcomingSubscriptions */ = {
 			isa = PBXGroup;
 			children = (
+				FDFB77A328B3C8C700E1C685 /* UpcomingSubscriptionsFeature.swift */,
 				FDFB779528B3AE2100E1C685 /* UpcomingSubscriptionsView.swift */,
+				FD97193928B3D453008F6AFC /* UpcomingSubscriptionEffect.swift */,
+				FD97193728B3CFD5008F6AFC /* UpcomingSubscriptionModel.swift */,
+				FD14A2E528B8C45C0025DE29 /* UpcomingSubscriptionDataView.swift */,
 				FDFB77A028B3B4E800E1C685 /* SubscriptionCard */,
 			);
 			path = UpcomingSubscriptions;
@@ -479,12 +491,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD97193A28B3D453008F6AFC /* UpcomingSubscriptionEffect.swift in Sources */,
+				FDFB77A428B3C8C700E1C685 /* UpcomingSubscriptionsFeature.swift in Sources */,
 				FD248DEA28B39BD600960952 /* TabItemData.swift in Sources */,
 				FDFB778728B39CF000E1C685 /* Colors.swift in Sources */,
 				FD248DEE28B39BF100960952 /* TabBottomView.swift in Sources */,
 				FDFB779628B3AE2100E1C685 /* UpcomingSubscriptionsView.swift in Sources */,
 				FD4379B22818A65E0036AE8B /* AbonoApp.swift in Sources */,
 				FDFB779A28B3AE5000E1C685 /* ProgressCircleView.swift in Sources */,
+				FD14A2E628B8C45C0025DE29 /* UpcomingSubscriptionDataView.swift in Sources */,
 				FDFB779228B3ADE400E1C685 /* TopAmountSectionView.swift in Sources */,
 				FD248DEC28B39BE400960952 /* TabItemView.swift in Sources */,
 				FD248DE828B39BC600960952 /* MainTabView.swift in Sources */,
@@ -497,6 +512,7 @@
 				FDFB779C28B3AE6A00E1C685 /* AlreadyPaidView.swift in Sources */,
 				FDFB778B28B3ACF600E1C685 /* Fonts.swift in Sources */,
 				FD248DF228B39C6400960952 /* AppAppearance.swift in Sources */,
+				FD97193828B3CFD5008F6AFC /* UpcomingSubscriptionModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

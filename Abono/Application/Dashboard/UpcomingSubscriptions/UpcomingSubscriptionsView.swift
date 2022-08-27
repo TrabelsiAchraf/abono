@@ -6,53 +6,47 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 struct UpcomingSubscriptionsView: View {
     
-    struct Subscription {
-        let id = UUID()
-        let name: String
-        let icon: String
-        let amount: String
-        let daysLeft: (progressValue: Float, progressColor: Color, text: String)
-    }
-    let subs: [Subscription] = [Subscription(name: "Netflix", icon: "netflix_ic", amount: "$13,99 / mo",
-                                             daysLeft: (progressValue: 0.85, progressColor: .blue, text: "28")),
-                                Subscription(name: "Uber Eat", icon: "uber_eat_ic", amount: "$3,99 / mo",
-                                             daysLeft: (progressValue: 0.25, progressColor: .red, text: "8")),
-                                Subscription(name: "Amazon Prime", icon: "prime_ic", amount: "$5,99 / mo",
-                                             daysLeft: (progressValue: 0.50, progressColor: .yellow, text: "15"))]
-    
-    var subscriptionCardTapped: (Subscription) -> Void
+    let store: Store<UpcomingSubscriptionsState, UpcomingSubscriptionsAction>
+    var subscriptionCardTapped: (UpcomingSubscriptionDataView) -> Void
     
     var body: some View {
-        VStack {
-            HStack {
-                Text("Upcoming")
-                    .font(.medium2).bold()
-                Spacer()
-                NavigationLink {
-//                    AllSubscriptionsView()
-                } label: {
-                    Text("See All")
-                        .font(.medium1).bold()
-                }
-            }
-            ScrollView(.horizontal, showsIndicators: false) {
+        WithViewStore(store) { viewStore in
+            VStack {
                 HStack {
-                    ForEach(subs, id: \.id) { subscription in
-                        SubscriptionCardView(name: subscription.name,
-                                             icon: subscription.icon,
-                                             amount: subscription.amount,
-                                             daysLeft: (progressValue: subscription.daysLeft.progressValue,
-                                                        progressColor: subscription.daysLeft.progressColor,
-                                                        text: subscription.daysLeft.text)
-                        ).onTapGesture {
-                            subscriptionCardTapped(subscription)
-                        }
+                    Text("Upcoming")
+                        .font(.medium2).bold()
+                    Spacer()
+                    NavigationLink {
+                        //                    AllSubscriptionsView()
+                    } label: {
+                        Text("See All")
+                            .font(.medium1).bold()
                     }
                 }
-                .background(Color.defaultBackground)
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack {
+                        ForEach(viewStore.upcomingSubs, id: \.id) { subscription in
+                            SubscriptionCardView(name: subscription.name,
+                                                 icon: subscription.icon,
+                                                 amount: subscription.amount,
+                                                 category: subscription.category.rawValue,
+                                                 daysLeft: (progressValue: 0.50,
+                                                            progressColor: .red,
+                                                            text: "15")
+                            ).onTapGesture {
+                                subscriptionCardTapped(subscription)
+                            }
+                        }
+                    }
+                    .background(Color.defaultBackground)
+                }
+            }
+            .onAppear {
+                viewStore.send(.onAppear)
             }
         }
     }
@@ -60,9 +54,20 @@ struct UpcomingSubscriptionsView: View {
 
 struct UpcomingSubscriptionsView_Previews: PreviewProvider {
     static var previews: some View {
-        UpcomingSubscriptionsView(subscriptionCardTapped: { subs in })
-            .previewLayout(.sizeThatFits)
-            .padding()
+        UpcomingSubscriptionsView(
+            store: Store(
+                initialState: UpcomingSubscriptionsState(),
+                reducer: upcomingSubsReducer,
+                environment: .dev(
+                    environment: UpcomingSubscriptionsEnvironment(
+                        upcomingSubsRequest: dummyUpcomingSubsEffect
+                    )
+                )
+            ),
+            subscriptionCardTapped: { subs in }
+        )
+        .previewLayout(.fixed(width: 500.0, height: 250.0))
+        .padding()
     }
 }
 
