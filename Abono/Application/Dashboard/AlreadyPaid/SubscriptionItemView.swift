@@ -11,6 +11,8 @@ struct SubscriptionItemView: View {
     
     let icon: String
     let name: String
+    let amount: String
+    let paymentDate: String
     
     var body: some View {
         HStack {
@@ -23,7 +25,7 @@ struct SubscriptionItemView: View {
             VStack(alignment: .leading) {
                 Text(name)
                     .font(.medium2).bold()
-                Text("30 September 2019")
+                Text(paymentDate)
                     .font(.caption)
                     .foregroundColor(Color.second)
             }
@@ -31,7 +33,7 @@ struct SubscriptionItemView: View {
             
             Spacer()
             
-            Text("$5,99 / mo")
+            Text(amount)
                 .font(.medium2).bold()
         }
         .padding()
@@ -46,13 +48,23 @@ struct SubscriptionItemView: View {
 struct SubscriptionItemView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            SubscriptionItemView(icon: "netflix_ic", name: "Netflix")
-                .previewLayout(.sizeThatFits)
+            SubscriptionItemView(
+                icon: "netflix_ic",
+                name: "Netflix",
+                amount: "$12,99 / mo",
+                paymentDate: "11 Janvier 2022"
+            )
+            .previewLayout(.sizeThatFits)
             .padding()
-            SubscriptionItemView(icon: "netflix_ic", name: "Netflix")
-                .preferredColorScheme(.dark)
-                .previewLayout(.sizeThatFits)
-                .padding()
+            SubscriptionItemView(
+                icon: "netflix_ic",
+                name: "Netflix",
+                amount: "$12,99 / mo",
+                paymentDate: "11 Janvier 2022"
+            )
+            .preferredColorScheme(.dark)
+            .previewLayout(.sizeThatFits)
+            .padding()
         }
     }
 }

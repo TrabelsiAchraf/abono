@@ -34,7 +34,11 @@
 		FD14A2D728B7A22D0025DE29 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FD14A2D628B7A22D0025DE29 /* FirebaseRemoteConfigSwift */; };
 		FD14A2D928B7A22D0025DE29 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FD14A2D828B7A22D0025DE29 /* FirebaseStorage */; };
 		FD14A2DB28B7A22D0025DE29 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = FD14A2DA28B7A22D0025DE29 /* FirebaseStorageCombine-Community */; };
+		FD14A2E028B8B5760025DE29 /* AlreadyPaidFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14A2DF28B8B5760025DE29 /* AlreadyPaidFeature.swift */; };
+		FD14A2E228B8B6910025DE29 /* AlreadyPaidDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14A2E128B8B6910025DE29 /* AlreadyPaidDataView.swift */; };
+		FD14A2E428B8BBF50025DE29 /* AlreadyPaidModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14A2E328B8BBF50025DE29 /* AlreadyPaidModel.swift */; };
 		FD14A2E628B8C45C0025DE29 /* UpcomingSubscriptionDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14A2E528B8C45C0025DE29 /* UpcomingSubscriptionDataView.swift */; };
+		FD14A2E828B8C8A90025DE29 /* AlreadyPaidEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14A2E728B8C8A80025DE29 /* AlreadyPaidEffect.swift */; };
 		FD248DE828B39BC600960952 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD248DE728B39BC600960952 /* MainTabView.swift */; };
 		FD248DEA28B39BD600960952 /* TabItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD248DE928B39BD600960952 /* TabItemData.swift */; };
 		FD248DEC28B39BE400960952 /* TabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD248DEB28B39BE400960952 /* TabItemView.swift */; };
@@ -80,7 +84,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD14A2DF28B8B5760025DE29 /* AlreadyPaidFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlreadyPaidFeature.swift; sourceTree = "<group>"; };
+		FD14A2E128B8B6910025DE29 /* AlreadyPaidDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlreadyPaidDataView.swift; sourceTree = "<group>"; };
+		FD14A2E328B8BBF50025DE29 /* AlreadyPaidModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlreadyPaidModel.swift; sourceTree = "<group>"; };
 		FD14A2E528B8C45C0025DE29 /* UpcomingSubscriptionDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingSubscriptionDataView.swift; sourceTree = "<group>"; };
+		FD14A2E728B8C8A80025DE29 /* AlreadyPaidEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlreadyPaidEffect.swift; sourceTree = "<group>"; };
 		FD248DE728B39BC600960952 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		FD248DE928B39BD600960952 /* TabItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemData.swift; sourceTree = "<group>"; };
 		FD248DEB28B39BE400960952 /* TabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemView.swift; sourceTree = "<group>"; };
@@ -306,8 +314,12 @@
 		FDFB77A128B3B4FB00E1C685 /* AlreadyPaid */ = {
 			isa = PBXGroup;
 			children = (
+				FD14A2DF28B8B5760025DE29 /* AlreadyPaidFeature.swift */,
 				FDFB779B28B3AE6A00E1C685 /* AlreadyPaidView.swift */,
 				FDFB779D28B3AE8600E1C685 /* SubscriptionItemView.swift */,
+				FD14A2E128B8B6910025DE29 /* AlreadyPaidDataView.swift */,
+				FD14A2E728B8C8A80025DE29 /* AlreadyPaidEffect.swift */,
+				FD14A2E328B8BBF50025DE29 /* AlreadyPaidModel.swift */,
 			);
 			path = AlreadyPaid;
 			sourceTree = "<group>";
@@ -492,6 +504,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD97193A28B3D453008F6AFC /* UpcomingSubscriptionEffect.swift in Sources */,
+				FD14A2E428B8BBF50025DE29 /* AlreadyPaidModel.swift in Sources */,
+				FD14A2E828B8C8A90025DE29 /* AlreadyPaidEffect.swift in Sources */,
 				FDFB77A428B3C8C700E1C685 /* UpcomingSubscriptionsFeature.swift in Sources */,
 				FD248DEA28B39BD600960952 /* TabItemData.swift in Sources */,
 				FDFB778728B39CF000E1C685 /* Colors.swift in Sources */,
@@ -502,6 +516,7 @@
 				FD14A2E628B8C45C0025DE29 /* UpcomingSubscriptionDataView.swift in Sources */,
 				FDFB779228B3ADE400E1C685 /* TopAmountSectionView.swift in Sources */,
 				FD248DEC28B39BE400960952 /* TabItemView.swift in Sources */,
+				FD14A2E228B8B6910025DE29 /* AlreadyPaidDataView.swift in Sources */,
 				FD248DE828B39BC600960952 /* MainTabView.swift in Sources */,
 				FD248DF028B39C0000960952 /* CustomTabView.swift in Sources */,
 				FDFB779028B3ADB800E1C685 /* HeaderView.swift in Sources */,
@@ -509,6 +524,7 @@
 				FDFB779E28B3AE8600E1C685 /* SubscriptionItemView.swift in Sources */,
 				FDFB778E28B3AD7B00E1C685 /* DashboardView.swift in Sources */,
 				FDFB779828B3AE3500E1C685 /* SubscriptionCardView.swift in Sources */,
+				FD14A2E028B8B5760025DE29 /* AlreadyPaidFeature.swift in Sources */,
 				FDFB779C28B3AE6A00E1C685 /* AlreadyPaidView.swift in Sources */,
 				FDFB778B28B3ACF600E1C685 /* Fonts.swift in Sources */,
 				FD248DF228B39C6400960952 /* AppAppearance.swift in Sources */,
