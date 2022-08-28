@@ -13,7 +13,7 @@ struct SubscriptionCardView: View {
     let icon: String
     let amount: String
     let category: String
-    let daysLeft: (progressValue: Float, progressColor: Color, text: String)
+    let daysLeft: UpcomingSubscriptionDataView.LeftDays
     
     var body: some View {
         VStack(spacing: 20) {
@@ -56,18 +56,31 @@ struct SubscriptionCardView: View {
 struct SubscriptionCardView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            SubscriptionCardView(name: "Netflix",
-                                 icon: "netflix_ic",
-                                 amount: "$5,99 / mo",
-                                 category: "Entertainment",
-                                 daysLeft: (progressValue: 0.85, progressColor: .blue, text: "28"))
-                .previewLayout(.sizeThatFits)
+            SubscriptionCardView(
+                name: "Netflix",
+                icon: "netflix_ic",
+                amount: "$5,99 / mo",
+                category: "Entertainment",
+                daysLeft:
+                    UpcomingSubscriptionDataView.LeftDays(
+                        progressValue: 0.85,
+                        progressColor: .blue,
+                        text: "28")
+            )
+            .previewLayout(.sizeThatFits)
             .padding()
-            SubscriptionCardView(name: "Netflix",
-                                 icon: "netflix_ic",
-                                 amount: "$5,99 / mo",
-                                 category: "Entertainment",
-                                 daysLeft: (progressValue: 0.85, progressColor: .blue, text: "28"))
+            SubscriptionCardView(
+                name: "Netflix",
+                icon: "netflix_ic",
+                amount: "$5,99 / mo",
+                category: "Entertainment",
+                daysLeft:
+                    UpcomingSubscriptionDataView.LeftDays(
+                        progressValue: 0.85,
+                        progressColor: .blue,
+                        text: "28"
+                    )
+            )
             .preferredColorScheme(.dark)
             .previewLayout(.sizeThatFits)
             .padding()

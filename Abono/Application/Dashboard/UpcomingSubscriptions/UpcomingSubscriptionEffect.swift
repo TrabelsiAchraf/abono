@@ -21,11 +21,37 @@ func upcomingSubsEffect(decoder: JSONDecoder) -> Effect<[UpcomingSubscriptionMod
 }
 
 func dummyUpcomingSubsEffect(decoder: JSONDecoder) -> Effect<[UpcomingSubscriptionDataView], APIError> {
+    let formatter = DateFormatter()
+    formatter.dateFormat = "yyyy/MM/dd"
     let dummyUpcomingSubs: [UpcomingSubscriptionDataView] = [
-        UpcomingSubscriptionModel(name: "Netflix", icon: "netflix_ic", amount: "$13,99 / mo", category: "Entertainment").map(),
-        UpcomingSubscriptionModel(name: "Spotify", icon: "spotify_ic", amount: "$80,99 / yr", category: "Music").map(),
-        UpcomingSubscriptionModel(name: "Uber Eat", icon: "uber_eat_ic", amount: "$3,99 / mo", category: "Food & Drinks").map(),
-        UpcomingSubscriptionModel(name: "Amazon Prime", icon: "prime_ic", amount: "$5,99 / mo", category: "Video").map()
+        UpcomingSubscriptionModel(
+            name: "Netflix",
+            icon: "netflix_ic",
+            amount: "$13,99 / mo",
+            category: "Entertainment",
+            paymentDate: formatter.date(from: "2022/08/22") ?? Date()
+        ).map(),
+        UpcomingSubscriptionModel(
+            name: "Spotify",
+            icon: "spotify_ic",
+            amount: "$80,99 / yr",
+            category: "Music",
+            paymentDate: formatter.date(from: "2022/08/11") ?? Date()
+        ).map(),
+        UpcomingSubscriptionModel(
+            name: "Uber Eat",
+            icon: "uber_eat_ic",
+            amount: "$3,99 / mo",
+            category: "Food & Drinks",
+            paymentDate: formatter.date(from: "2022/08/07") ?? Date()
+        ).map(),
+        UpcomingSubscriptionModel(
+            name: "Amazon Prime",
+            icon: "prime_ic",
+            amount: "$5,99 / mo",
+            category: "Video",
+            paymentDate: formatter.date(from: "2022/08/02") ?? Date()
+        ).map()
     ]
     return Effect(value: dummyUpcomingSubs)
 }

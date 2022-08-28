@@ -34,9 +34,7 @@ struct UpcomingSubscriptionsView: View {
                                                  icon: subscription.icon,
                                                  amount: subscription.amount,
                                                  category: subscription.category.rawValue,
-                                                 daysLeft: (progressValue: 0.50,
-                                                            progressColor: .red,
-                                                            text: "15")
+                                                 daysLeft: subscription.leftDays
                             ).onTapGesture {
                                 subscriptionCardTapped(subscription)
                             }
