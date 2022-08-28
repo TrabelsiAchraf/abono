@@ -10,7 +10,8 @@ import ComposableArchitecture
 func dummyAlreadyPaidEffect(decoder: JSONDecoder) -> Effect<AlreadyPaidDataView, APIError> { 
     let subs: [AlreadyPaidDataView.PaidSubscription] = [
         AlreadyPaidDataView.PaidSubscription(name: "Netflix", icon: "netflix_ic", paymentDate: "11 Janvier 2022", amount: "$12,99 / mo"),
-        AlreadyPaidDataView.PaidSubscription(name: "Uber Eat", icon: "uber_eat_ic", paymentDate: "30 September 2022", amount: "$5,99 / mo")
+        AlreadyPaidDataView.PaidSubscription(name: "Uber Eat", icon: "uber_eat_ic", paymentDate: "30 September 2022", amount: "$5,99 / mo"),
+        AlreadyPaidDataView.PaidSubscription(name: "Spotify", icon: "spotify_ic", paymentDate: "12 Mars 2022", amount: "$80,99 / yr")
     ]
     let dummyAlreadyPaid = AlreadyPaidDataView(
         alreadyPaidValue: "23€ / 120€",
