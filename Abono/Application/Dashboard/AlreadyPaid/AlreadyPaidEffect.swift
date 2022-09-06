@@ -20,13 +20,3 @@ func dummyAlreadyPaidEffect(decoder: JSONDecoder) -> Effect<AlreadyPaidDataView,
     )
     return Effect(value: dummyAlreadyPaid)
 }
-
-struct Subscriptions: Decodable, Equatable {
-    let name: String
-    let amount: String
-    var dictionary: [String: String] {
-        ["name": name,
-         "amount": amount
-        ]
-    }
-}
