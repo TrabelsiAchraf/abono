@@ -28,12 +28,15 @@
 		FD3E067428BAC45700B85360 /* SubscriptionCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3E067328BAC45700B85360 /* SubscriptionCategory.swift */; };
 		FD3E067628BAC46400B85360 /* BillingCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3E067528BAC46400B85360 /* BillingCycle.swift */; };
 		FD3E067828BAE53300B85360 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3E067728BAE53300B85360 /* ProgressBar.swift */; };
+		FD3E068128BBCBA300B85360 /* Abono.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD3E067F28BBCBA300B85360 /* Abono.xcdatamodeld */; };
+		FD3E068328BBCC7300B85360 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3E068228BBCC7300B85360 /* CoreDataStack.swift */; };
 		FD4379B22818A65E0036AE8B /* AbonoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4379B12818A65E0036AE8B /* AbonoApp.swift */; };
 		FD4379B62818A65F0036AE8B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD4379B52818A65F0036AE8B /* Images.xcassets */; };
 		FD4379B92818A65F0036AE8B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD4379B82818A65F0036AE8B /* Preview Assets.xcassets */; };
 		FD97193628B3CF93008F6AFC /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD97193528B3CF93008F6AFC /* APIError.swift */; };
 		FD97193828B3CFD5008F6AFC /* UpcomingSubscriptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD97193728B3CFD5008F6AFC /* UpcomingSubscriptionModel.swift */; };
 		FD97193A28B3D453008F6AFC /* UpcomingSubscriptionEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD97193928B3D453008F6AFC /* UpcomingSubscriptionEffect.swift */; };
+		FDCFBA5328C78EBF00FA5B05 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCFBA5228C78EBF00FA5B05 /* DummyData.swift */; };
 		FDFB778728B39CF000E1C685 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFB778628B39CF000E1C685 /* Colors.swift */; };
 		FDFB778928B39D0600E1C685 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDFB778828B39D0600E1C685 /* Colors.xcassets */; };
 		FDFB778B28B3ACF600E1C685 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFB778A28B3ACF600E1C685 /* Fonts.swift */; };
@@ -90,6 +93,8 @@
 		FD3E067328BAC45700B85360 /* SubscriptionCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionCategory.swift; sourceTree = "<group>"; };
 		FD3E067528BAC46400B85360 /* BillingCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillingCycle.swift; sourceTree = "<group>"; };
 		FD3E067728BAE53300B85360 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		FD3E068028BBCBA300B85360 /* Subscriptions.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Subscriptions.xcdatamodel; sourceTree = "<group>"; };
+		FD3E068228BBCC7300B85360 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		FD4379AE2818A65E0036AE8B /* Abono.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Abono.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD4379B12818A65E0036AE8B /* AbonoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbonoApp.swift; sourceTree = "<group>"; };
 		FD4379B52818A65F0036AE8B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -99,6 +104,7 @@
 		FD97193528B3CF93008F6AFC /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		FD97193728B3CFD5008F6AFC /* UpcomingSubscriptionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingSubscriptionModel.swift; sourceTree = "<group>"; };
 		FD97193928B3D453008F6AFC /* UpcomingSubscriptionEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingSubscriptionEffect.swift; sourceTree = "<group>"; };
+		FDCFBA5228C78EBF00FA5B05 /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 		FDFB778628B39CF000E1C685 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		FDFB778828B39D0600E1C685 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		FDFB778A28B3ACF600E1C685 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
@@ -265,6 +271,16 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		FD3E067E28BBCB2400B85360 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FD3E067F28BBCBA300B85360 /* Abono.xcdatamodeld */,
+				FD3E068228BBCC7300B85360 /* CoreDataStack.swift */,
+				FDCFBA5228C78EBF00FA5B05 /* DummyData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		FD4379A52818A65E0036AE8B = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				FD248DE428B39B0000960952 /* Application */,
+				FD3E067E28BBCB2400B85360 /* Data */,
 				FDFB77A828B3CEA400E1C685 /* Shared */,
 				FDFB778528B39CD600E1C685 /* Design System */,
 				FD248DE328B39A4700960952 /* Resources */,
@@ -534,6 +551,7 @@
 				FD14A2E828B8C8A90025DE29 /* AlreadyPaidEffect.swift in Sources */,
 				FD3E067628BAC46400B85360 /* BillingCycle.swift in Sources */,
 				FDFB77A428B3C8C700E1C685 /* UpcomingSubscriptionsFeature.swift in Sources */,
+				FD3E068128BBCBA300B85360 /* Abono.xcdatamodeld in Sources */,
 				FD248DEA28B39BD600960952 /* TabItemData.swift in Sources */,
 				FD14A2A228B7944D0025DE29 /* RootFeature.swift in Sources */,
 				FDFB778728B39CF000E1C685 /* Colors.swift in Sources */,
@@ -542,6 +560,8 @@
 				FD4379B22818A65E0036AE8B /* AbonoApp.swift in Sources */,
 				FDFB779A28B3AE5000E1C685 /* ProgressCircleView.swift in Sources */,
 				FD14A2E628B8C45C0025DE29 /* UpcomingSubscriptionDataView.swift in Sources */,
+				FDCFBA5328C78EBF00FA5B05 /* DummyData.swift in Sources */,
+				FD3E068328BBCC7300B85360 /* CoreDataStack.swift in Sources */,
 				FDFB779228B3ADE400E1C685 /* TopAmountSectionView.swift in Sources */,
 				FD3E066C28BAC0B800B85360 /* ContactUsView.swift in Sources */,
 				FD248DEC28B39BE400960952 /* TabItemView.swift in Sources */,
@@ -902,6 +922,19 @@
 			productName = ComposableArchitecture;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		FD3E067F28BBCBA300B85360 /* Abono.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FD3E068028BBCBA300B85360 /* Subscriptions.xcdatamodel */,
+			);
+			currentVersion = FD3E068028BBCBA300B85360 /* Subscriptions.xcdatamodel */;
+			path = Abono.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FD4379A62818A65E0036AE8B /* Project object */;
 }
